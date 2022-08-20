@@ -1,1 +1,1 @@
-Sitemap: https://fastpages.fast.ai/sitemap.xml
+Sitemap: https://a1234l.github.io/VSCode-Fastpages/sitemap.xml
