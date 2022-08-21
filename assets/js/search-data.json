@@ -2,10 +2,10 @@
   
     
         "post0": {
-            "title": "Firstpost",
+            "title": "An Example Markdown Post",
             "content": "Sample Post . Hello, this is my sample post. .",
-            "url": "https://a1234l.github.io/VSCode-Fastpages/2022/08/20/FirstPost.html",
-            "relUrl": "/2022/08/20/FirstPost.html",
+            "url": "https://a1234l.github.io/VSCode-Fastpages/markdown/2022/08/20/FirstPost.html",
+            "relUrl": "/markdown/2022/08/20/FirstPost.html",
             "date": " • Aug 20, 2022"
         }
         
