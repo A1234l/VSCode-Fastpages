@@ -7,4 +7,4 @@ title: My Personal Page
 ---
 # My Personal Page
 
-![Laptop png](/images/Laptop png.png)
+![notebookC](/images/notebookC.png)
