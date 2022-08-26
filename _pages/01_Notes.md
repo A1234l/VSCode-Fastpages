@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Notes For APCSP
+title: Notes
 ---
 # Notes
 My first notes
