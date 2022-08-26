@@ -1,6 +1,6 @@
 ---
-Layout: page
-Title: CSP Vocab Words
+layout: page
+title: CSP Vocab Words
 ---
 # Vocab List
 My vocab list
