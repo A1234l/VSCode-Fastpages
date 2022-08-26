@@ -7,4 +7,4 @@ title: My Personal Page
 ---
 # My Personal Page
 
-![](images/notebookC.png)
+![]({{site.baseurl}}/images/notebookC.png "https://github.com/A1234l/VSCode-Fastpages")
