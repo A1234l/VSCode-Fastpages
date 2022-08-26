@@ -25,7 +25,7 @@
     
         ,"post2": {
             "title": "My First Sample Notebook",
-            "content": "Hello, this is a sample. . Hello, this is a sample .",
+            "content": "Hello, this is a sample. . print(Hello, this is a sample) .",
             "url": "https://a1234l.github.io/VSCode-Fastpages/jupyter/2022/08/20/First_Notebook.html",
             "relUrl": "/jupyter/2022/08/20/First_Notebook.html",
             "date": " • Aug 20, 2022"
