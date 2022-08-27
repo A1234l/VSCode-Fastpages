@@ -93,7 +93,7 @@
   
       ,"page0": {
           "title": "Notes",
-          "content": "Notes . My first notes .",
+          "content": "My first notes .",
           "url": "https://a1234l.github.io/VSCode-Fastpages/_pages/01_Notes.html",
           "relUrl": "/_pages/01_Notes.html",
           "date": ""
@@ -104,7 +104,7 @@
   
       ,"page1": {
           "title": "Vocab",
-          "content": "Vocab List . My vocab list .",
+          "content": "My vocab list .",
           "url": "https://a1234l.github.io/VSCode-Fastpages/_pages/02_Vocab.html",
           "relUrl": "/_pages/02_Vocab.html",
           "date": ""
@@ -117,7 +117,7 @@
   
       ,"page3": {
           "title": "About Me",
-          "content": "Hi, I am Alan Liu-Sui, and I am a student in APCSP. My APCSP content is in this fastpage. .",
+          "content": "Hi, I am Alan Liu-Sui, and I am a student in APCSP. My APCSP content is in this fastpage .",
           "url": "https://a1234l.github.io/VSCode-Fastpages/about/",
           "relUrl": "/about/",
           "date": ""
