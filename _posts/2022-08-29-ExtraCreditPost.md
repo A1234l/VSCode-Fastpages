@@ -1,0 +1,11 @@
+---
+toc: false
+layout: post
+description: This is the extra credit for the alumni panel on 8/29/22.
+categories: [markdown]
+title: Extra Credit Post
+---
+
+# Insights and Takeaways from the Panel
+
+I learned that computer science is perfect for those who like problem solving. I am personally okay with it, so I'm pretty sure computer science is good for me. I also learned that having logical thinking is crucial for engineering majors, and this is especially true when you have to code in these majors, since coding requires step-by-step logic. Computer science is very important to use in real world situations, since it is used everywhere as the world relies more on the internet. Therefore, if one wants to make an impact, then they should learn computer science well. When it comes to learning CSP at DNHS, I learned that I should use Google more often when researching for the correct syntax. This way, it is much more efficient, and I don't have to be asking others online and waiting forever for a reponse. It's also best not to cut corners and not just do things for points. By doing things just for a grade, it takes away the purpose of learning, which isn't really good in the long run. I also shouldn't give up when running into problems with the code. While I do think that I have done a pretty good job in this area, I believe that I can still improve by changing my mindset so I don't always get so frustrated when running into a problem. One of the biggest challenges is getting started with computer science, which I believe a lot after going through the first few weeks of school. However, I believe that I should keep pushing and not give up. The takeaway that I believe is the most important is to not compare yourselves to others. Del Norte is a very competitive school, therefore, there's a lot of pressure to keep up with other people. But, by doing so, it only wastes your time from doing things that you are passionate about, and puts a lot of unnecessary stress on yourself. As a result, the main takeaway is that I should focus on what I like to do, and once I do it well, then I will be able to stand out from others in a unique way.
