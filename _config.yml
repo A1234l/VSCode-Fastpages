@@ -82,7 +82,7 @@ html_escape:
 
 # Everything below here should be left alone. Modifications may break fastpages
 future: true
-theme: time machine
+theme: hacker
 plugins:
   - jekyll-feed
   - jekyll-gist
