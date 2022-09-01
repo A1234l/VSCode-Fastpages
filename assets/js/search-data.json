@@ -15,8 +15,8 @@
         ,"post1": {
             "title": "HTML Fragments Hacks",
             "content": "Hacks . Observations from changing the theme: I noticed that the features from the pages folder are not on the fastpage. The links are also glowing. Transitioning between the blog posts are a lot harder and less fluid because the “Alan’s Fastpages” link does not work. The favicon on the tab also does not work. . .",
-            "url": "https://a1234l.github.io/VSCode-Fastpages/markdown/week/2022/08/31/IndexhtmlHacks.html",
-            "relUrl": "/markdown/week/2022/08/31/IndexhtmlHacks.html",
+            "url": "https://a1234l.github.io/VSCode-Fastpages/markdown/week2/2022/08/31/IndexhtmlHacks.html",
+            "relUrl": "/markdown/week2/2022/08/31/IndexhtmlHacks.html",
             "date": " • Aug 31, 2022"
         }
         
