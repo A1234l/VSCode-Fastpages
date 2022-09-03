@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: This is my personal page.
-categories: [markdown]
+categories: [markdown, Personal]
 title: My Personal Page
 ---
 # My Personal Page

@@ -2,7 +2,7 @@
 toc: false
 layout: post
 description: This is the extra credit for the alumni panel on 8/29/22.
-categories: [markdown]
+categories: [markdown, Extra]
 title: Extra Credit Post
 ---
 
