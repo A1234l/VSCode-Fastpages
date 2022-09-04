@@ -2,6 +2,7 @@
 toc: false
 layout: post
 description: Hacks for the HTML fragments.
+comments: true
 categories: [markdown, Week 2]
 title: HTML Fragments Hacks
 ---
