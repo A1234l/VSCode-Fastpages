@@ -1,7 +1,6 @@
 ---
 toc: false
 title: Applab Blog
-badges: true
 comments: true
 categories: [markdown, Week 3]
 image: images/applab-tool.png
