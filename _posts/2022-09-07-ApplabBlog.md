@@ -13,4 +13,6 @@ Me and my partner, Noor, have decided on making a math quiz on applab for the we
 
 It was challenging to put all those semicolons at the end of every line. The commands were also slightly different from python, preventing the code from being very straightforward.
 
+Some ideas for the college board create task is to make an AI quiz, which can start to learn your own learning preferences.
+
 ![]({{site.baseurl}}/images/applabS.png)
