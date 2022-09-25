@@ -6,10 +6,10 @@ layout: post
 ---
 # Scrum Team Roles
 
-Alan: Backend developer
-Noor: Frontend developer
-Steven: Scrum master
-Ederick: DevOps
+- Alan: Backend developer
+- Noor: Frontend developer
+- Steven: Scrum master
+- Ederick: DevOps
 
 # Project Plan
 
