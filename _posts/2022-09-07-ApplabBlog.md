@@ -5,6 +5,7 @@ comments: true
 categories: [markdown, Week 3]
 image: images/applab-tool.png
 description: This is the blog post for reflections on the Applab design.
+layout: post
 ---
 
 # Blog Reflections
