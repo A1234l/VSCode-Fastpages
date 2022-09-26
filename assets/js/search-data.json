@@ -280,7 +280,7 @@
   
       ,"page3": {
           "title": "Frontend",
-          "content": "This is a sample for the frontend in the javascript notebook. .",
+          "content": "| Home | Frontend Page | About | Quiz | . This is a sample for the frontend in the javascript notebook. .",
           "url": "https://a1234l.github.io/VSCode-Fastpages/_pages/04_Frontend.html",
           "relUrl": "/_pages/04_Frontend.html",
           "date": ""
