@@ -6,7 +6,7 @@ layout: post
 ---
 
 # Screenshot for Completion:
-![]({{site.baseurl}}/images/proof.png)
+![]({{site.baseurl}}/images/UpdatedCB.png)
 
 # Screenshot Showing I have no more Assignments Left:
 ![]({{site.baseurl}}/images/proof2.png)
