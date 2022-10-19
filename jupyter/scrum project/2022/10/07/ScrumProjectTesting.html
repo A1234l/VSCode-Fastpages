@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -168,6 +168,219 @@ window.onload = wrap_img;
 hi
 Password: 
 no u
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://open-weather13.p.rapidapi.com/city/San%20Diego"</span>
+
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="s2">"X-RapidAPI-Key"</span><span class="p">:</span> <span class="s2">"554c89336amsh69cd248886ad9ecp1390b5jsn24d7469d6aa0"</span><span class="p">,</span>
+	<span class="s2">"X-RapidAPI-Host"</span><span class="p">:</span> <span class="s2">"open-weather13.p.rapidapi.com"</span>
+<span class="p">}</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+
+<span class="c1"># result = response.json().get('weather')</span>
+<span class="c1"># for re in result:  </span>
+<span class="c1">#     if re["main"] == "Clouds":  </span>
+<span class="c1">#         for key, value in re.items(): </span>
+<span class="c1">#             print(key, value)</span>
+<span class="c1"># result = response.json().get('weather')</span>
+<span class="c1"># for key, value in result.items(): </span>
+<span class="c1">#     print(key, ":", value)</span>
+<span class="c1"># result = response.json().get('weather')</span>
+<span class="c1"># for re in result:</span>
+<span class="c1">#     re = ["weather"]</span>
+<span class="c1">#     for key, value in re.items():</span>
+<span class="c1">#             print(key, value)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Temperature in San Diego:"</span><span class="p">)</span>
+<span class="n">result2</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'main'</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">result2</span><span class="o">.</span><span class="n">items</span><span class="p">():</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="s2">":"</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+
+<span class="c1"># result = response.json().get('cities')</span>
+<span class="c1"># for re in result:  </span>
+<span class="c1">#     if re["city_name"] == "San Diego":  </span>
+<span class="c1">#         for key, value in re.items(): </span>
+<span class="c1">#             print(key, value)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{"coord":{"lon":-117.1573,"lat":32.7153},"weather":[{"id":800,"main":"Clear","description":"clear sky","icon":"01d"}],"base":"stations","main":{"temp":74.88,"feels_like":75.49,"temp_min":67.75,"temp_max":84.33,"pressure":1015,"humidity":73},"visibility":10000,"wind":{"speed":13,"deg":300,"gust":17},"clouds":{"all":0},"dt":1666040009,"sys":{"type":2,"id":2005032,"country":"US","sunrise":1666014842,"sunset":1666055611},"timezone":-25200,"id":5391811,"name":"San Diego","cod":200}
+Temperature in San Diego:
+temp : 74.88
+feels_like : 75.49
+temp_min : 67.75
+temp_max : 84.33
+pressure : 1015
+humidity : 73
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">datetime</span>
+<span class="n">date</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">dateCalc</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+<span class="c1"># print(dateCalc.strftime("%A"))</span>
+<span class="k">if</span> <span class="n">dateCalc</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">"%A"</span><span class="p">)</span> <span class="o">==</span> <span class="s2">"Monday"</span><span class="p">:</span>
+	<span class="n">date</span> <span class="o">=</span> <span class="s2">"Mon"</span>
+<span class="k">if</span> <span class="n">dateCalc</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">"%A"</span><span class="p">)</span> <span class="o">==</span> <span class="s2">"Tuesday"</span><span class="p">:</span>
+	<span class="n">date</span> <span class="o">=</span> <span class="s2">"Tue"</span>
+<span class="k">if</span> <span class="n">dateCalc</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">"%A"</span><span class="p">)</span> <span class="o">==</span> <span class="s2">"Wednesday"</span><span class="p">:</span>
+	<span class="n">date</span> <span class="o">=</span> <span class="s2">"Wed"</span>
+<span class="k">if</span> <span class="n">dateCalc</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">"%A"</span><span class="p">)</span> <span class="o">==</span> <span class="s2">"Thursday"</span><span class="p">:</span>
+	<span class="n">date</span> <span class="o">=</span> <span class="s2">"Thu"</span>
+<span class="k">if</span> <span class="n">dateCalc</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">"%A"</span><span class="p">)</span> <span class="o">==</span> <span class="s2">"Friday"</span><span class="p">:</span>
+	<span class="n">date</span> <span class="o">=</span> <span class="s2">"Fri"</span>
+<span class="k">if</span> <span class="n">dateCalc</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">"%A"</span><span class="p">)</span> <span class="o">==</span> <span class="s2">"Saturday"</span><span class="p">:</span>
+	<span class="n">date</span> <span class="o">=</span> <span class="s2">"Sat"</span>
+<span class="k">if</span> <span class="n">dateCalc</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">"%A"</span><span class="p">)</span> <span class="o">==</span> <span class="s2">"Sunday"</span><span class="p">:</span>
+	<span class="n">date</span> <span class="o">=</span> <span class="s2">"Sun"</span>
+
+<span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://yahoo-weather5.p.rapidapi.com/weather"</span>
+
+<span class="n">location</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+
+<span class="n">querystring</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"location"</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">location</span><span class="p">),</span><span class="s2">"format"</span><span class="p">:</span><span class="s2">"json"</span><span class="p">,</span><span class="s2">"u"</span><span class="p">:</span><span class="s2">"f"</span><span class="p">}</span>
+
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="s2">"X-RapidAPI-Key"</span><span class="p">:</span> <span class="s2">"554c89336amsh69cd248886ad9ecp1390b5jsn24d7469d6aa0"</span><span class="p">,</span>
+	<span class="s2">"X-RapidAPI-Host"</span><span class="p">:</span> <span class="s2">"yahoo-weather5.p.rapidapi.com"</span>
+<span class="p">}</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">querystring</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Weather is in ◦F"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Forcast in"</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">location</span><span class="p">),</span> <span class="s2">":"</span><span class="p">)</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'forecasts'</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">re</span> <span class="ow">in</span> <span class="n">result</span><span class="p">:</span>
+	<span class="k">if</span> <span class="n">re</span><span class="p">[</span><span class="s2">"day"</span><span class="p">]</span> <span class="o">==</span> <span class="n">date</span><span class="p">:</span>
+		<span class="c1"># if re[""] change this later</span>
+		<span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">re</span><span class="o">.</span><span class="n">items</span><span class="p">():</span> 
+        		<span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span><span class="s2">":"</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+					
+			
+		<span class="c1"># print(re["day"], ":" " Low:", re["low"], "High:", re["high"], "Clearness:", re["text"])</span>
+		<span class="c1"># for key, value in re.items(): </span>
+		<span class="c1"># 	print(key, ":", value)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{"location":{"city":"San Diego","region":" CA","woeid":2487889,"country":"United States","lat":32.831699,"long":-117.122002,"timezone_id":"America/Los_Angeles"},"current_observation":{"wind":{"chill":87,"direction":90,"speed":12},"atmosphere":{"humidity":20,"visibility":10,"pressure":29.89,"rising":0},"astronomy":{"sunrise":"6:56 am","sunset":"6:11 pm"},"condition":{"code":32,"text":"Sunny","temperature":90},"pubDate":1666113900},"forecasts":[{"day":"Tue","date":1666062000,"low":64,"high":92,"text":"Sunny","code":32},{"day":"Wed","date":1666148400,"low":65,"high":91,"text":"Mostly Sunny","code":34},{"day":"Thu","date":1666234800,"low":64,"high":85,"text":"Partly Cloudy","code":30},{"day":"Fri","date":1666321200,"low":62,"high":79,"text":"Partly Cloudy","code":30},{"day":"Sat","date":1666407600,"low":58,"high":70,"text":"Cloudy","code":26},{"day":"Sun","date":1666494000,"low":56,"high":68,"text":"Partly Cloudy","code":30},{"day":"Mon","date":1666580400,"low":57,"high":73,"text":"Sunny","code":32},{"day":"Tue","date":1666666800,"low":53,"high":76,"text":"Sunny","code":32},{"day":"Wed","date":1666753200,"low":54,"high":78,"text":"Sunny","code":32},{"day":"Thu","date":1666839600,"low":57,"high":79,"text":"Mostly Cloudy","code":28},{"day":"Fri","date":1666926000,"low":54,"high":75,"text":"Mostly Sunny","code":34}]}
+Weather is in ◦F
+Forcast in san diego :
+day : Tue
+date : 1666062000
+low : 64
+high : 92
+text : Sunny
+code : 32
+day : Tue
+date : 1666666800
+low : 53
+high : 76
+text : Sunny
+code : 32
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">datetime</span>
+
+<span class="n">date2</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">date2</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">"%A"</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">date2</span><span class="p">)</span>
+
+<span class="n">date</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">dateCalc</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dateCalc</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">"%A"</span><span class="p">))</span>
+<span class="k">if</span> <span class="n">dateCalc</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">"%A"</span><span class="p">)</span> <span class="o">==</span> <span class="s2">"Tuesday"</span><span class="p">:</span>
+	<span class="n">date</span> <span class="o">=</span> <span class="mi">2</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">date</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Tuesday
+2022-10-18 13:51:14.091172
+Tuesday
+2
 </pre>
 </div>
 </div>
