@@ -651,6 +651,21 @@ You&#39;ve used up all your searches. Please refresh the cell if you want to con
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>food [&#39;pizza&#39;, &#39;burgers&#39;, &#39;fries&#39;, &#39;pasta&#39;] &lt;class &#39;list&#39;&gt; length 4
+burgers &lt;class &#39;str&#39;&gt;
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     {% endraw %}
 

@@ -38,9 +38,20 @@ baseurl: "/VSCode-Fastpages" # the subpath of your site, e.g. "/blog".
 
 # Github and twitter are optional:
 minima:
+  # social_links:
+  #   twitter: fastdotai
+    # github: A1234l
   social_links:
-    twitter: fastdotai
-    github: A1234l
+    - { platform: github, user_url: "
+    https://github.com/A1234l
+    "}
+    - { platform: twitter, user_url: "
+    https://twitter.com/NighthawkCodin
+    "}
+    - { platform: youtube, user_url: "
+    https://www.youtube.com/channel/UC1akV2IlxiXWLUxzQX0slmw/featured
+    "}
+
 
 # Set this to true to get LaTeX math equation support
 use_math: 
