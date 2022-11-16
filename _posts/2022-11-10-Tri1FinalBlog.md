@@ -36,4 +36,3 @@ categories: [markdown, Week 12]
 ![]({{site.baseurl}}/images/Q37.png)
 
 ## Total Score: 43/50
-test
