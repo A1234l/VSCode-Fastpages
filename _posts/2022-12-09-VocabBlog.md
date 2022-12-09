@@ -1,6 +1,6 @@
 ---
 title: Vocab Blog
-description: I will be blogging about my mistakes on the MC.
+description: I will be blogging Units 2-3 vocab.
 layout: post
 toc: false
 categories: [markdown]
