@@ -3,7 +3,6 @@ title: Vocab Blog
 description: I will be blogging about my mistakes on the MC.
 layout: post
 toc: false
-permalink: /vocab
 categories: [markdown]
 ---
 # Vocab Unit 2
