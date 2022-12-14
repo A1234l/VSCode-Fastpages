@@ -31,7 +31,7 @@ Score: 0.90/1
 
 Units 3.12-3.13:
 [Link](https://a1234l.github.io/VSCode-Fastpages/lesson6)
-Score:
+Score: 0.90/1
 
 Units 3.14-3.15:
 
