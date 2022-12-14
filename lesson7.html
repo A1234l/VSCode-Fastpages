@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      4 min read
+      5 min read
     
 </span></p>
 
@@ -459,10 +459,141 @@ PROCEDURE Dice(n)
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">even</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">odd</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">def</span> <span class="nf">randomNumber</span><span class="p">():</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">n</span>
+
+<span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">i</span> <span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+    <span class="n">rNumber</span> <span class="o">=</span> <span class="n">randomNumber</span><span class="p">()</span>
+    <span class="n">inputNumber</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Type anything to start, type 'stop' to show random numbers"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">inputNumber</span> <span class="o">==</span> <span class="s2">"stop"</span><span class="p">:</span>
+        <span class="n">i</span> <span class="o">+=</span><span class="mi">1</span>
+    <span class="k">if</span> <span class="n">rNumber</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">even</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">rNumber</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">odd</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">rNumber</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Even: "</span><span class="p">,</span> <span class="o">*</span><span class="n">even</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Odd: "</span><span class="p">,</span> <span class="o">*</span><span class="n">odd</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Even:  74 54 44 28 14 26 34 38 100 88 34
+Odd:  85 67 41 71
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"a."</span><span class="p">)</span>
+<span class="n">polynomial</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">poly1d</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">6</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Polynomial: f(x)=</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">polynomial</span><span class="p">)</span>
+
+<span class="n">Pderivative</span> <span class="o">=</span> <span class="n">polynomial</span><span class="o">.</span><span class="n">deriv</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Derivative: f'(x)=</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">Pderivative</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"b."</span><span class="p">)</span>
+<span class="n">polynomial2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">poly1d</span><span class="p">([</span><span class="mf">6.5</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Polynomial: f(x)=</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">polynomial2</span><span class="p">)</span>
+
+<span class="n">Pderivative2</span> <span class="o">=</span> <span class="n">polynomial2</span><span class="o">.</span><span class="n">deriv</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Derivative: f'(x)=</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">Pderivative2</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"When x=9,  f(x)'="</span><span class="p">,</span> <span class="n">Pderivative2</span><span class="p">(</span><span class="mi">9</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>a.
+Polynomial: f(x)=
+    5     2
+2 x - 6 x + 1 x
+Derivative: f'(x)=
+     4
+10 x - 12 x + 1
+b.
+Polynomial: f(x)=
+      4     2
+6.5 x + 2 x
+Derivative: f'(x)=
+     3
+26 x + 4 x
+When x=9,  f(x)'= 18990.0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">dogCat</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"dog"</span><span class="p">,</span> <span class="s2">"cat"</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">choices</span><span class="p">(</span><span class="n">dogCat</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">20</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>['dog', 'dog', 'cat', 'dog', 'dog', 'dog', 'dog', 'cat', 'dog', 'dog', 'cat', 'cat', 'dog', 'dog', 'dog', 'dog', 'dog', 'cat', 'cat', 'cat']
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
