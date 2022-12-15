@@ -23,7 +23,8 @@ Nibbles: 4 bits.
 # Vocab Unit 3
 Variables: A type of data assigned to an arbitrary value.
 - `variable = 1`
-Data types: Four data types: integers(ex: 10), boolean(ex: true/false), string(ex: "hi"), and list(ex: ["hi", "hello"])
+Data types: Values that represent different types and ways they are used.
+integers(ex: 10), boolean(ex: true/false), string(ex: "hi"), and list(ex: ["hi", "hello"])
 
 Assignment operators: things that assign values in relation to another value.
 - Ex: `+=, -=`
@@ -67,5 +68,3 @@ Selection: Uses true/false to determine which code is executed.
 Iteration: Repeats a code if condition is true.
 - `while x == true:`
 - `    print(true)`
-
-test
