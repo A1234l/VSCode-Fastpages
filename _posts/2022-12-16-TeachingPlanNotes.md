@@ -21,5 +21,12 @@ categories: [markdown, Student-Guided Lessons]
 
 # Khan Academy Notes([Link](https://www.khanacademy.org/computing/ap-computer-science-principles/algorithms-101/solving-hard-problems/a/undecidable-problems))
 
-- Khan Academy explains the same thing as the Youtube Video. The diagram is very good, could possibly be used for teaching.
+- Khan Academy explains the same thing as the Youtube Video. The flow chart is very good, could possibly be used for teaching.
 - Computers cannot tell if a program runs forever, if loop takes too long, the code terminates
+
+# Lesson Plan for Unit 3.18(My part)
+- Use Khan Academy flow chart or make one similar to it.
+- Expect people to get very confused at first. Try your best to explaining things better and teach it one step at a time
+- To teach it one step at a time, first demonstrate a forever running code. You can do this through an integer test but you add 1 everytime, so computer runs forever
+- For decidable problem, just do a simple math program. Almost anything works for undecidable problem
+- For hacks, try doing something related to undecidable problems that doesn't involve any code, since it's too complex to use much code.
