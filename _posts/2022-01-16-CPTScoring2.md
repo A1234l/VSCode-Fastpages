@@ -7,6 +7,7 @@ toc: true
 permalink: /CPTScore2
 ---
 ## Submission 1:
+
 |Reporting Category|Student Grading Score|Collegeboard's Score|Comments|
 |:---:|:---:|:---:|:---:|
 |Program Purpose and Function|0|0|The purpose was the functionality of the program, giving it a 0.|
@@ -17,6 +18,7 @@ permalink: /CPTScore2
 |Testing|1|1|The calls, conditions, and results are fully stated.|
 
 ## Submission 2:
+
 |Reporting Category|Student Grading Score|Collegeboard's Score|Comments|
 |:---:|:---:|:---:|:---:|
 |Program Purpose and Function|1|1|Function and purpose is clearly stated.|
@@ -27,6 +29,7 @@ permalink: /CPTScore2
 |Testing|1|1|The call, conditions, and results are all stated.|
 
 ## Submission 3:
+
 |Reporting Category|Student Grading Score|Collegeboard's Score|Comments|
 |:---:|:---:|:---:|:---:|
 |Program Purpose and Function|0|0|The purpose is the functionality, which subtracts a point.|
@@ -37,6 +40,7 @@ permalink: /CPTScore2
 |Testing|1|1|All the calls, conditions, and results are shown.|
 
 ## Submission 4:
+
 |Reporting Category|Student Grading Score|Collegeboard's Score|Comments|
 |:---:|:---:|:---:|:---:|
 |Program Purpose and Function|1|1|The video demonstrated input, functionality, and output, and the purpose was clear.|
