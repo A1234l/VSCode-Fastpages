@@ -32,7 +32,7 @@ permalink: /CPTScore3
 
 |Reporting Category|Student Grading Score|Collegeboard's Score|Comments|
 |:---:|:---:|:---:|:---:|
-|Program Purpose and Function|1|0|The purpose is well stated and program functionality, input, and output are clearly shown in both the video and the written description.|
+|Program Purpose and Function|1|1|The purpose is well stated and program functionality, input, and output are clearly shown in both the video and the written description.|
 |Data Abstraction|0|0|The list is applied to the program's purpose, but the first code segment does not really show the list with data being stored into it.|
 |Managing Complexity|1|0|The list was shown to manage complexity by making the code more efficient. The result of not using the list is also clearly explained.|
 |Procedural Abstraction|0|0|A procedure is shown in the first code segment but it is missing parameters. A different function is called in the second code segment.|
