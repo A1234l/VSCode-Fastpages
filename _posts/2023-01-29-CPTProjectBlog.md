@@ -8,7 +8,7 @@ categories: [markdown, Week 20]
 ---
 
 # Outline write up for Collegeboard
-> I will be using the API database and frontend table for the write up. The API database involves a leaderboard which displays high scores.
+> I will be using the API database and frontend table for the write up. The API database involves a game history.
 
 ## Row 1: Purpose and function
 Purpose: To provide a user-friendly interaction through competition.
