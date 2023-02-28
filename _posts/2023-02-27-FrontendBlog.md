@@ -10,7 +10,7 @@ categories: [markdown, Week 24]
 # Frontend Features
 
 ## Garbage Data:
-![]({{site.baseurl}}/images/Form.png)
+![]({{site.baseurl}}/images/UpdatedForm.png)
 
 This is the code for the form where a person inputs their username after a snake game is over. The UI helps solve garbage inputs by automatically inputting the user's score. This helps to prevent cheating or inputting letters(which isn't a score).
 
