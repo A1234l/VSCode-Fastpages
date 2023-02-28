@@ -41,7 +41,7 @@ The dictionary in the variable body helps to create separate, distinct packets o
 ![]({{site.baseurl}}/images/addrowfunction.png)
 
 ### 3.c.ii.
-![]({{site.baseurl}}/images/CPT3.png)
+![]({{site.baseurl}}/images/CPTNew.png)
 
 ### 3.c.iii.
 The procedure add_row() adds a row on the table of the leaderboard, and displays the username, score, and date based on the user's inputs and the data from the API. This helps to display the data from user inputs onto the leaderboard so that other users are able to see the top scorers of the game.
@@ -51,4 +51,19 @@ The algorithm fetches the API using its URL to execute the GET method. It then c
 
 ### 3.d.i.
 **First Call:**
-The first call is when the user is 
+The first call is when the user clicks on the leaderboard website, which calls the function that fetches the API with a functional URL.
+
+**Second Call:**
+The second call is when the user clicks on the leaderboard website, which calls the function that fetches the API while the URL is down.'
+
+**Condition(s) tested by first call:**
+The first call checks the errors and successfully determines that there are no errors with fetching the data. As a result, the data from the user input is sorted based on the user's score using the response.json().then() command.
+
+**Condition(s) tested by second call:**
+The second call checks fetch errors using the .catch() command. Since the URL to the API is down, a fetch error will prompt the .catch() command to function.
+
+**Results of first call:**
+The first call displays the user onto the leaderboard given that it is a top five scorer.
+
+**Results of the second call:**
+An error message is displayed on the leaderboard and no user data is displayed.
