@@ -24,4 +24,4 @@ This code helps fetch the API from the deployed flask server and creates the use
 ![]({{site.baseurl}}/images/ReadFrontend2.png)
 ![]({{site.baseurl}}/images/ReadFrontend3.png)
 
-This code fetches the API from the deployed server and displays the data in a table.
+This code fetches the API from the deployed server and displays the data in a table. The data displayed is sorted from the highest scorer to the lowest scorer, and only the top 5 scorers are displayed.
