@@ -1,6 +1,6 @@
 ---
 title: CPT Scoring Part 3
-categories: [markdown, Week 19]
+categories: [markdown, Week 19, CPT]
 description: This is the table for the CPT Scoring on sample submissions part 3.
 layout: post
 toc: true

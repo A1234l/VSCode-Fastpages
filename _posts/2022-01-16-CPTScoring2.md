@@ -1,6 +1,6 @@
 ---
 title: CPT Scoring Part 2
-categories: [markdown, Week 18]
+categories: [markdown, Week 18, CPT]
 description: This is the table for the CPT Scoring on sample submissions part 2.
 layout: post
 toc: true
