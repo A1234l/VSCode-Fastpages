@@ -35,7 +35,7 @@
   
     
         ,"post3": {
-            "title": "Backend CRUD Blog Achievements",
+            "title": "Backend CRUD Blog",
             "content": "Code from the Backend . Create: . Creating a user profile uses the POST method. There are multiple error conditions handled in the code. If the username inputted does not have 3 characters, an error message is displayed. If the score has no digits, an error message is displayed. Finally, if there is a format error for the date, then an error message is again displayed. . Read: . The person is able to read the data from the API using the GET method. This code helps display all the data from the API. . Update: . Updating a profile uses the PUT method. The username to be updated is inputted, and the score is updated to the newly inputted score. . Delete: . Deleting a profile uses the DELETE method. An ID number is inputted, and the profile with the corresponding ID number is deleted. . Demonstration of working CRUD using postman: . https://youtu.be/NO75rgn60ZQ .",
             "url": "https://a1234l.github.io/VSCode-Fastpages/BE",
             "relUrl": "/BE",
