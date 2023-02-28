@@ -36,7 +36,7 @@
     
         ,"post3": {
             "title": "Backend CRUD Blog",
-            "content": "Code from the Backend . Create: . Creating a user profile uses the POST method. There are multiple error conditions handled in the code. If the username inputted does not have 3 characters, an error message is displayed. If the score has no digits, an error message is displayed. Finally, if there is a format error for the date, then an error message is again displayed. . Read: . The person is able to read the data from the API using the GET method. This code helps display all the data from the API. . Update: . Updating a profile uses the PUT method. The username to be updated is inputted, and the score is updated to the newly inputted score. . Delete: . Deleting a profile uses the DELETE method. An ID number is inputted, and the profile with the corresponding ID number is deleted. . Demonstration of working CRUD using postman: . https://youtu.be/NO75rgn60ZQ .",
+            "content": "Code from the Backend . Create: . Creating a user profile uses the POST method. There are multiple error conditions handled in the code. If the username inputted does not have 3 characters, an error message is displayed. If the score has no digits, an error message is displayed. Finally, if there is a format error for the date, then an error message is again displayed. . Read: . The person is able to read the data from the API using the GET method. This code helps display all the data from the API. . Update: . Updating a profile uses the PUT method. The username to be updated is inputted, and the score is updated to the newly inputted score. . Delete: . Deleting a profile uses the DELETE method. An ID number is inputted, and the profile with the corresponding ID number is deleted. . Demonstration of working CRUD using postman: . Video .",
             "url": "https://a1234l.github.io/VSCode-Fastpages/BE",
             "relUrl": "/BE",
             "date": " • Feb 27, 2023"
@@ -520,7 +520,7 @@
     
         ,"post47": {
             "title": "My Personal Notebook",
-            "content": "Notes . (Start here) | . print(&quot;This is the coding workspace.&quot;) . Link to homepage .",
+            "content": "Notes . Unit 5 Notes . Unit 5.1: . School are most concerned with ChatGPT because it can help you with your homework. | ChatGPT is threatening Google because in ChatGPT you don&#39;t need to search up stuff or click links; it&#39;s more convenient. | | . print(&quot;This is the coding workspace.&quot;) . Link to homepage .",
             "url": "https://a1234l.github.io/VSCode-Fastpages/jupyter/personal/2022/08/27/PersonalNotebook.html",
             "relUrl": "/jupyter/personal/2022/08/27/PersonalNotebook.html",
             "date": " • Aug 27, 2022"
