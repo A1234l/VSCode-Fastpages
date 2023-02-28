@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Backend CRUD Blog Achievements
-description: This is the backend achievements blog, showing evidence of working Create, Read, Update, and Delete.
+title: Backend CRUD Blog
+description: This is the backend blog, showing evidence of working Create, Read, Update, and Delete.
 toc: true
 permalink: /BE
 categories: [markdown, Week 24]
