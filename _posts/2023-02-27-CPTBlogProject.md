@@ -8,7 +8,7 @@ categories: [markdown, CPT, Week 24]
 ---
 
 ## Video
-Video is found here:
+Video is found here: [Video](https://youtu.be/NtKtnrTTgis)
 
 # Written Response
 
