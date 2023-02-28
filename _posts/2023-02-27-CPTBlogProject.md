@@ -26,7 +26,7 @@ After the snake game is over, the user inputs a three-letter username. The score
 ![]({{site.baseurl}}/images/CreateFrontend.png)
 
 ### 3.b.ii.
-![]({{site.baseurl}}/images/CREATE.png)
+![]({{site.baseurl}}/images/POST3.png)
 
 ### 3.b.iii.
 The variable, or constant is body is the name of the dictionary.
