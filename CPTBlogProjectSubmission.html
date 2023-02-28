@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -171,7 +171,7 @@ window.onload = wrap_img;
 
 <h3 id="3cii">
 <a class="anchor" href="#3cii" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.c.ii.</h3>
-<p><img src="/VSCode-Fastpages/images/CPT3.png" alt=""></p>
+<p><img src="/VSCode-Fastpages/images/CPTNew.png" alt=""></p>
 
 <h3 id="3ciii">
 <a class="anchor" href="#3ciii" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.c.iii.</h3>
@@ -184,7 +184,22 @@ window.onload = wrap_img;
 <h3 id="3di">
 <a class="anchor" href="#3di" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.d.i.</h3>
 <p><strong>First Call:</strong>
-The first call is when the user is</p>
+The first call is when the user clicks on the leaderboard website, which calls the function that fetches the API with a functional URL.</p>
+
+<p><strong>Second Call:</strong>
+The second call is when the user clicks on the leaderboard website, which calls the function that fetches the API while the URL is down.’</p>
+
+<p><strong>Condition(s) tested by first call:</strong>
+The first call checks the errors and successfully determines that there are no errors with fetching the data. As a result, the data from the user input is sorted based on the user’s score using the response.json().then() command.</p>
+
+<p><strong>Condition(s) tested by second call:</strong>
+The second call checks fetch errors using the .catch() command. Since the URL to the API is down, a fetch error will prompt the .catch() command to function.</p>
+
+<p><strong>Results of first call:</strong>
+The first call displays the user onto the leaderboard given that it is a top five scorer.</p>
+
+<p><strong>Results of the second call:</strong>
+An error message is displayed on the leaderboard and no user data is displayed.</p>
 
   </div><a class="u-url" href="/VSCode-Fastpages/CPTBlogProjectSubmission" hidden></a>
 </article>
