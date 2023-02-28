@@ -25,7 +25,7 @@
     
         ,"post2": {
             "title": "Frontend Code",
-            "content": "Frontend Features . Garbage Data: . . This is the code for the form where a person inputs their username after a snake game is over. The UI helps solve garbage inputs by automatically inputting the user’s score. This helps to prevent cheating or inputting letters(which isn’t a score). . Create: . . This code helps fetch the API from the deployed flask server and creates the user after inputting information into the form. . Read: . . This code fetches the API from the deployed server and displays the data in a table. .",
+            "content": "Frontend Features . Garbage Data: . . This is the code for the form where a person inputs their username after a snake game is over. The UI helps solve garbage inputs by automatically inputting the user’s score. This helps to prevent cheating or inputting letters(which isn’t a score). . Create: . . This code helps fetch the API from the deployed flask server and creates the user after inputting information into the form. . Read: . . This code fetches the API from the deployed server and displays the data in a table. The data displayed is sorted from the highest scorer to the lowest scorer, and only the top 5 scorers are displayed. .",
             "url": "https://a1234l.github.io/VSCode-Fastpages/FE",
             "relUrl": "/FE",
             "date": " • Feb 27, 2023"
