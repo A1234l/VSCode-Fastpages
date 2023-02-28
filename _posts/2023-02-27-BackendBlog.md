@@ -26,4 +26,4 @@ Updating a profile uses the PUT method. The username to be updated is inputted, 
 Deleting a profile uses the DELETE method. An ID number is inputted, and the profile with the corresponding ID number is deleted.
 
 # Demonstration of working CRUD using postman:
-https://youtu.be/NO75rgn60ZQ
+**[Video](https://youtu.be/NO75rgn60ZQ)**
