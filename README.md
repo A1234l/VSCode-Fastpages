@@ -8,6 +8,7 @@ https://A1234l.github.io/VSCode-Fastpages/
 
 # My Blog
 
+Run local server: bundle exec jekyll serve -H 0.0.0.0 -P 4001
 
 _powered by [fastpages](https://github.com/fastai/fastpages)_
 
