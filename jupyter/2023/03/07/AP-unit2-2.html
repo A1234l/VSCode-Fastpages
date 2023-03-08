@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      10 min read
+      11 min read
     
 </span></p>
 
@@ -226,7 +226,8 @@ window.onload = wrap_img;
 <p>File paths are different on Windows versus Mac and Linux.  This can cause problems in a project as you work and deploy on different Operating Systems (OS's), pathlib is a solution to this problem.</p>
 <ul>
 <li>What are commands you use in terminal to access files?</li>
-<li>What are the command you use in Windows terminal to access files?</li>
+<li>Don't know if this is correct though:- <strong>On windows, I use the cd command to access different files.</strong>- What are the command you use in Windows terminal to access files?</li>
+<li><strong>I also use the cd command on the windows terminal.</strong></li>
 <li>What are some of the major differences?</li>
 </ul>
 </blockquote>
@@ -365,9 +366,10 @@ window.onload = wrap_img;
 <span class="k">def</span> <span class="nf">image_data</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="n">Path</span><span class="p">(</span><span class="s2">"images/"</span><span class="p">),</span> <span class="n">images</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>  <span class="c1"># path of static images is defaulted</span>
     <span class="k">if</span> <span class="n">images</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>  <span class="c1"># default image</span>
         <span class="n">images</span> <span class="o">=</span> <span class="p">[</span>
-            <span class="p">{</span><span class="s1">'source'</span><span class="p">:</span> <span class="s2">"Internet"</span><span class="p">,</span> <span class="s1">'label'</span><span class="p">:</span> <span class="s2">"Green Square"</span><span class="p">,</span> <span class="s1">'file'</span><span class="p">:</span> <span class="s2">"green-square-16.png"</span><span class="p">},</span>
-            <span class="p">{</span><span class="s1">'source'</span><span class="p">:</span> <span class="s2">"Peter Carolin"</span><span class="p">,</span> <span class="s1">'label'</span><span class="p">:</span> <span class="s2">"Clouds Impression"</span><span class="p">,</span> <span class="s1">'file'</span><span class="p">:</span> <span class="s2">"clouds-impression.png"</span><span class="p">},</span>
-            <span class="p">{</span><span class="s1">'source'</span><span class="p">:</span> <span class="s2">"Peter Carolin"</span><span class="p">,</span> <span class="s1">'label'</span><span class="p">:</span> <span class="s2">"Lassen Volcano"</span><span class="p">,</span> <span class="s1">'file'</span><span class="p">:</span> <span class="s2">"lassen-volcano.jpg"</span><span class="p">}</span>
+            <span class="c1"># {'source': "Internet", 'label': "Green Square", 'file': "green-square-16.png"},</span>
+            <span class="c1"># {'source': "Peter Carolin", 'label': "Clouds Impression", 'file': "clouds-impression.png"},</span>
+            <span class="c1"># {'source': "Peter Carolin", 'label': "Lassen Volcano", 'file': "lassen-volcano.jpg"}</span>
+            <span class="p">{</span><span class="s1">'source'</span><span class="p">:</span> <span class="s2">"Internet"</span><span class="p">,</span> <span class="s1">'label'</span><span class="p">:</span> <span class="s2">"Happy Face"</span><span class="p">,</span> <span class="s1">'file'</span><span class="p">:</span> <span class="s2">"happyfaceEC.png"</span><span class="p">},</span>
         <span class="p">]</span>
     <span class="k">for</span> <span class="n">image</span> <span class="ow">in</span> <span class="n">images</span><span class="p">:</span>
         <span class="c1"># File to open</span>
@@ -454,6 +456,43 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">FileNotFoundError</span>                         Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/mnt/c/Users/sarah/vscode/VSCode-Fastpages/_notebooks/2023-03-07-AP-unit2-2.ipynb Cell 9</span> in <span class="ansi-cyan-fg">&lt;cell line: 77&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/sarah/vscode/VSCode-Fastpages/_notebooks/2023-03-07-AP-unit2-2.ipynb#X35sdnNjb2RlLXJlbW90ZQ%3D%3D?line=80'&gt;81&lt;/a&gt;</span> # Display meta data, scaled view, and grey scale for each image
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/sarah/vscode/VSCode-Fastpages/_notebooks/2023-03-07-AP-unit2-2.ipynb#X35sdnNjb2RlLXJlbW90ZQ%3D%3D?line=81'&gt;82&lt;/a&gt;</span> for image in images:
+<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/sarah/vscode/VSCode-Fastpages/_notebooks/2023-03-07-AP-unit2-2.ipynb#X35sdnNjb2RlLXJlbW90ZQ%3D%3D?line=82'&gt;83&lt;/a&gt;</span>     image_management(image)
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/sarah/vscode/VSCode-Fastpages/_notebooks/2023-03-07-AP-unit2-2.ipynb#X35sdnNjb2RlLXJlbW90ZQ%3D%3D?line=83'&gt;84&lt;/a&gt;</span>     print("---- meta data -----")
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/sarah/vscode/VSCode-Fastpages/_notebooks/2023-03-07-AP-unit2-2.ipynb#X35sdnNjb2RlLXJlbW90ZQ%3D%3D?line=84'&gt;85&lt;/a&gt;</span>     print(image['label'])
+
+<span class="ansi-green-intense-fg ansi-bold">/mnt/c/Users/sarah/vscode/VSCode-Fastpages/_notebooks/2023-03-07-AP-unit2-2.ipynb Cell 9</span> in <span class="ansi-cyan-fg">image_management</span><span class="ansi-blue-fg">(image)</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/sarah/vscode/VSCode-Fastpages/_notebooks/2023-03-07-AP-unit2-2.ipynb#X35sdnNjb2RlLXJlbW90ZQ%3D%3D?line=36'&gt;37&lt;/a&gt;</span> def image_management(image):  # path of static images is defaulted        
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/sarah/vscode/VSCode-Fastpages/_notebooks/2023-03-07-AP-unit2-2.ipynb#X35sdnNjb2RlLXJlbW90ZQ%3D%3D?line=37'&gt;38&lt;/a&gt;</span>     # Image open return PIL image object
+<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/sarah/vscode/VSCode-Fastpages/_notebooks/2023-03-07-AP-unit2-2.ipynb#X35sdnNjb2RlLXJlbW90ZQ%3D%3D?line=38'&gt;39&lt;/a&gt;</span>     img = pilImage.open(image['filename'])
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/sarah/vscode/VSCode-Fastpages/_notebooks/2023-03-07-AP-unit2-2.ipynb#X35sdnNjb2RlLXJlbW90ZQ%3D%3D?line=40'&gt;41&lt;/a&gt;</span>     # Python Image Library operations
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/mnt/c/Users/sarah/vscode/VSCode-Fastpages/_notebooks/2023-03-07-AP-unit2-2.ipynb#X35sdnNjb2RlLXJlbW90ZQ%3D%3D?line=41'&gt;42&lt;/a&gt;</span>     image['format'] = img.format
+
+File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/PIL/Image.py:2953</span>, in <span class="ansi-cyan-fg">open</span><span class="ansi-blue-fg">(fp, mode, formats)</span>
+<span class="ansi-green-intense-fg ansi-bold">   2950</span>     filename = fp
+<span class="ansi-green-intense-fg ansi-bold">   2952</span> if filename:
+<span class="ansi-green-fg">-&gt; 2953</span>     fp = builtins.open(filename, "rb")
+<span class="ansi-green-intense-fg ansi-bold">   2954</span>     exclusive_fp = True
+<span class="ansi-green-intense-fg ansi-bold">   2956</span> try:
+
+<span class="ansi-red-fg">FileNotFoundError</span>: [Errno 2] No such file or directory: '/mnt/c/Users/sarah/vscode/VSCode-Fastpages/_notebooks/images/happyfaceEC.png'</pre>
+</div>
+</div>
+
 </div>
 </div>
 
