@@ -2,10 +2,10 @@
   
     
         "post0": {
-            "title": "MCQ 4 Corrections",
+            "title": "2018 MCQ Corrections",
             "content": "2018 MC Test Corrections . Score: 62/66 . Corrections: . Question 9 . . I got this question wrong because it seems like I don’t fully understand iterative processes. Low-level abstractions are unrelated to iterative and incremental process. . Question 12 . . The question is asking for the estimate in year 12. That means I would have to increase the data by about 1-1.2 instead of 0.6 since that would mean the number at year 11. . Question 47 . . The sender’s private key does not decrypt a message. You are sending it yourself so you don’t need decryption. Only the recipient needs to decrypt the message and that is made possible through the recipient’s private key. . Question 54 . . The question is asking for a generalized procedure, not a specific one. Fourth(n) is not generalized. The generalization for the two given procedures involve powers, so it makes sense that the generalized procedure in this one is Power(n,m). .",
-            "url": "https://a1234l.github.io/VSCode-Fastpages/MCQ4",
-            "relUrl": "/MCQ4",
+            "url": "https://a1234l.github.io/VSCode-Fastpages/MC2018",
+            "relUrl": "/MC2018",
             "date": " • Apr 18, 2023"
         }
         
