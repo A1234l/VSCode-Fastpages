@@ -60,6 +60,16 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
 
 - Complete True of False Questions
 
+### Video 4.1.2 True False Questions:
+1. True, open protocols allow for more unrestricted sharing to the rest of the internet.
+2. False, IETF sets up the rules of the internet but does not keep manufacturers out from the internet. The internet is a thing where all people can access it.
+3. False, different routes can be undertaken depending on if a MAC is available for transfer or not. While the file is being transferred it determines which MACs are available or not.
+4. True, things like Internet Protocol and other protocols are agreed upon rules that set up specific behaviors in the system.
+5. False, UDP guarantees faster transfers but does not guarantee consistent transfer success.
+6. False, the World Wide Web is not the internet. WWW links pages instead.
+7. True, HTTP is used by World WIde Web to display website pages.
+### Score: 7/7
+
 - Essential Knowledge
     - The internet is a computer network consisting of interconnected networks that use standardized, open (nonproprierary) communication protocols.
     - Access to the internet depends on the ability to connect a computing device to an internet connected device.
