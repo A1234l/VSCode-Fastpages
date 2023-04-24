@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Sass Lesson Code",
-            "content": "Example of an operator: Concatenation . &lt;p id=&quot;testing&quot;&gt;original text and&lt;/p&gt; . Sass: . #testing:after{ content: &quot; some&quot; + &quot; more&quot; + &quot; text&quot;; } . Output: . .",
+            "content": "Example of an operator: Concatenation . &lt;p id=&quot;testing&quot;&gt;original text and&lt;/p&gt; . Sass: . #testing:after{ content: &quot; some&quot; + &quot; more&quot; + &quot; text&quot;; } .",
             "url": "https://a1234l.github.io/VSCode-Fastpages/jupyter/week%2030/2023/04/23/SassLesson.html",
             "relUrl": "/jupyter/week%2030/2023/04/23/SassLesson.html",
             "date": " • Apr 23, 2023"
