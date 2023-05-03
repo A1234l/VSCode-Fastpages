@@ -25,12 +25,14 @@ title: Notes and Student Lessons
 
 |Lesson|Link to Lesson|Score|
 |:--:|:--:|:-:|
-|4/21 Binary Lesson|[Link](https://a1234l.github.io/VSCode-Fastpages/lesson1)|0.90/1|
-|4/23 Sass lesson|[Link](https://a1234l.github.io/VSCode-Fastpages/lesson2)|NA, lesson taught by my group|
-|4/24 Simulations lesson|[Link](https://a1234l.github.io/VSCode-Fastpages/lesson3)|0.90/1|
-|4/25 Frontend Backend Connection|[Link](https://a1234l.github.io/VSCode-Fastpages/lesson4)|0.90/1|
-|4/26 Lists, Dictionaries lesson|[Link](https://a1234l.github.io/VSCode-Fastpages/lesson5)|0.92/1|
-|4/27 User Data lesson|[Link](https://a1234l.github.io/VSCode-Fastpages/lesson6)|0.90/1|
+|4/21 Binary Lesson|[Link](https://a1234l.github.io/VSCode-Fastpages/jupyter/week%2030/2023/04/21/P3M-BinaryLesson.html)|0.90/1|
+|4/23 Sass lesson|[Link](https://nighthawkcoders.github.io/APCSP//student/2023/04/28/P3M-SASSFundamentals.html)|NA, lesson taught by my group|
+|4/24 Simulations lesson|[Link](https://a1234l.github.io/VSCode-Fastpages/simulationLesson)|0.90/1|
+|4/25 Frontend Backend Connection|[Link](https://a1234l.github.io/VSCode-Fastpages/jupyter/week%2031/2023/04/26/P3M-frontend-backend-connection.html)|0.90/1|
+|4/26 Lists, Dictionaries lesson|[Link](https://a1234l.github.io/VSCode-Fastpages/student/2023/04/27/P3M-Lists-Dictionaries.html)|0.92/1|
+|4/27 User Data lesson|[Link](https://a1234l.github.io/VSCode-Fastpages/2023/04/27/P3M-Team-SnapShot-Student.html)|0.90/1|
+
+### Total Score for Tri 3 Lessons: <mark>4.52</mark>
 
 [College Board and other resources notes on Lesson plan for units 3.17-3.18](https://a1234l.github.io/VSCode-Fastpages/resourcenotes)
 
