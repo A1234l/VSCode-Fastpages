@@ -29,7 +29,7 @@ title: Notes and Student Lessons
 |4/23 Sass lesson|[Link](https://a1234l.github.io/VSCode-Fastpages/lesson2)|NA, lesson taught by my group|
 |4/24 Simulations lesson|[Link](https://a1234l.github.io/VSCode-Fastpages/lesson3)|0.90/1|
 |4/25 Frontend Backend Connection|[Link](https://a1234l.github.io/VSCode-Fastpages/lesson4)|0.90/1|
-|4/26 Lists, Dictionaries lesson|[Link](https://a1234l.github.io/VSCode-Fastpages/lesson5)|/1|
+|4/26 Lists, Dictionaries lesson|[Link](https://a1234l.github.io/VSCode-Fastpages/lesson5)|0.92/1|
 |4/27 User Data lesson|[Link](https://a1234l.github.io/VSCode-Fastpages/lesson6)|0.90/1|
 
 [College Board and other resources notes on Lesson plan for units 3.17-3.18](https://a1234l.github.io/VSCode-Fastpages/resourcenotes)
