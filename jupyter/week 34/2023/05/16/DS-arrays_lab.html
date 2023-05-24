@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      13 min read
+      14 min read
     
 </span></p>
 
@@ -415,10 +415,10 @@ For loop with shortcut (*) row expansion
 
 
 
-<div id="d81d0449-d0fc-492d-a08d-c826ae49bf56"></div>
+<div id="ca99a423-0f88-4256-8963-9562a60f7ca0"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#d81d0449-d0fc-492d-a08d-c826ae49bf56');
+var element = $('#ca99a423-0f88-4256-8963-9562a60f7ca0');
 
 /*
 * Creator: Nighthawk Coding Society
@@ -438,6 +438,80 @@ for (var i = 0; i < rows; i++) {
         console.log(arr2D[i][j]);
     }
 }
+
+</script>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%js</span>
+
+<span class="cm">/*</span>
+<span class="cm">* Creator: Nighthawk Coding Society</span>
+<span class="cm">Construct a two-dimensional array in JS</span>
+<span class="cm">*/</span>
+
+<span class="kd">var</span> <span class="nx">arr2D</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="kd">var</span> <span class="nx">rows</span> <span class="o">=</span> <span class="mf">3</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">cols</span> <span class="o">=</span> <span class="mf">4</span><span class="p">;</span>
+ 
+<span class="c1">// Loop to initialize 2D array elements</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">rows</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">arr2D</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span><span class="o">=</span><span class="p">[];</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">j</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;</span> <span class="nx">cols</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">arr2D</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="nx">j</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"r:"</span> <span class="o">+</span> <span class="nx">i</span> <span class="o">+</span> <span class="s2">"c:"</span> <span class="o">+</span> <span class="nx">j</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr2D</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+
+<div id="df3f6129-fa3e-49b3-9b5e-168f17e195da"></div>
+<div class="output_subarea output_javascript ">
+<script type="text/javascript">
+var element = $('#df3f6129-fa3e-49b3-9b5e-168f17e195da');
+
+/*
+* Creator: Nighthawk Coding Society
+Construct a two-dimensional array in JS
+*/
+
+var arr2D = [];
+var rows = 3;
+var cols = 4;
+ 
+// Loop to initialize 2D array elements
+for (var i = 0; i < rows; i++) {
+    arr2D[i]=[];
+    for (var j = 0; j < cols; j++) {
+        arr2D[i][j] = "r:" + i + "c:" + j;
+    }
+}
+console.log(arr2D);
 
 </script>
 </div>
