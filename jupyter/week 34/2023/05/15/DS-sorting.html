@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      11 min read
     
 </span></p>
 
@@ -436,20 +436,255 @@ Select the algorithm you believe is best for each, explain.</li>
     <span class="p">{</span><span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Ryan"</span><span class="p">,</span> <span class="s2">"age"</span><span class="p">:</span> <span class="mi">21</span><span class="p">,</span> <span class="s2">"city"</span><span class="p">:</span> <span class="s2">"Los Angeles"</span><span class="p">}</span>
     <span class="p">]</span>
     
+    <span class="n">cookie_prices</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span><span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Chocolate Chip"</span><span class="p">,</span> <span class="s2">"price"</span><span class="p">:</span> <span class="mf">2.50</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Oatmeal Raisin"</span><span class="p">,</span> <span class="s2">"price"</span><span class="p">:</span> <span class="mf">2.00</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Peanut Butter"</span><span class="p">,</span> <span class="s2">"price"</span><span class="p">:</span> <span class="mf">2.75</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Snickerdoodle"</span><span class="p">,</span> <span class="s2">"price"</span><span class="p">:</span> <span class="mf">1.75</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Sugar"</span><span class="p">,</span> <span class="s2">"price"</span><span class="p">:</span> <span class="mf">1.50</span><span class="p">}</span>
+<span class="p">]</span>
     <span class="c1"># assuming uniform keys, pick 1st row as source of keys</span>
-    <span class="n">key_row</span> <span class="o">=</span> <span class="n">list_of_people</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-
+    <span class="c1"># key_row = list_of_people[0]</span>
+    <span class="n">key_row</span> <span class="o">=</span> <span class="n">cookie_prices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
     <span class="c1"># print list as defined</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"Original"</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">list_of_people</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">cookie_prices</span><span class="p">)</span>
     
     <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">key_row</span><span class="p">:</span>  <span class="c1"># finds each key in the row</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
-        <span class="n">bubbleSort</span><span class="p">(</span><span class="n">list_of_people</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>  <span class="c1"># sort list of people</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">list_of_people</span><span class="p">)</span>
+        <span class="n">bubbleSort</span><span class="p">(</span><span class="n">cookie_prices</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>  <span class="c1"># sort list of people</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">cookie_prices</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Original
+[{'name': 'Chocolate Chip', 'price': 2.5}, {'name': 'Oatmeal Raisin', 'price': 2.0}, {'name': 'Peanut Butter', 'price': 2.75}, {'name': 'Snickerdoodle', 'price': 1.75}, {'name': 'Sugar', 'price': 1.5}]
+name
+[{'name': 'Chocolate Chip', 'price': 2.5}, {'name': 'Oatmeal Raisin', 'price': 2.0}, {'name': 'Peanut Butter', 'price': 2.75}, {'name': 'Snickerdoodle', 'price': 1.75}, {'name': 'Sugar', 'price': 1.5}]
+price
+[{'name': 'Sugar', 'price': 1.5}, {'name': 'Snickerdoodle', 'price': 1.75}, {'name': 'Oatmeal Raisin', 'price': 2.0}, {'name': 'Chocolate Chip', 'price': 2.5}, {'name': 'Peanut Butter', 'price': 2.75}]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
+
+<span class="k">def</span> <span class="nf">merge_sort</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
+    <span class="sd">"""</span>
+<span class="sd">    This function sorts the given array of dictionaries using the merge sort algorithm.</span>
+<span class="sd">    The sorting is done based on the value of the given key in each dictionary.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">    - arr: list of dictionaries to be sorted</span>
+<span class="sd">    - key: key in each dictionary to be used for sorting</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">    - sorted_arr: sorted list of dictionaries</span>
+<span class="sd">    """</span>
+    <span class="c1"># If the length of the array is greater than 1, split it into two halves</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">mid</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>
+        <span class="n">left_half</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[:</span><span class="n">mid</span><span class="p">]</span>
+        <span class="n">right_half</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[</span><span class="n">mid</span><span class="p">:]</span>
+
+        <span class="c1"># Recursively sort the left and right halves</span>
+        <span class="n">merge_sort</span><span class="p">(</span><span class="n">left_half</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
+        <span class="n">merge_sort</span><span class="p">(</span><span class="n">right_half</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
+
+        <span class="c1"># Merge the sorted halves</span>
+        <span class="n">i</span> <span class="o">=</span> <span class="n">j</span> <span class="o">=</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">left_half</span><span class="p">)</span> <span class="ow">and</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">right_half</span><span class="p">):</span>
+            <span class="c1"># Compare the values of the given key in the left and right halves</span>
+            <span class="k">if</span> <span class="n">left_half</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">key</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">right_half</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="n">key</span><span class="p">]:</span>
+                <span class="c1"># If the value in the left half is smaller, add it to the sorted array</span>
+                <span class="n">arr</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">left_half</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+                <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="c1"># If the value in the right half is smaller, add it to the sorted array</span>
+                <span class="n">arr</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">right_half</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+                <span class="n">j</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="n">k</span> <span class="o">+=</span> <span class="mi">1</span>
+
+        <span class="c1"># Add any remaining elements from the left half to the sorted array</span>
+        <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">left_half</span><span class="p">):</span>
+            <span class="n">arr</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">left_half</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+            <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="n">k</span> <span class="o">+=</span> <span class="mi">1</span>
+
+        <span class="c1"># Add any remaining elements from the right half to the sorted array</span>
+        <span class="k">while</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">right_half</span><span class="p">):</span>
+            <span class="n">arr</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">right_half</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+            <span class="n">j</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="n">k</span> <span class="o">+=</span> <span class="mi">1</span>
+
+    <span class="c1"># Return the sorted array</span>
+    <span class="k">return</span> <span class="n">arr</span>
+
+<span class="c1"># Example usage</span>
+<span class="n">cookie_prices</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span><span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Chocolate Chip"</span><span class="p">,</span> <span class="s2">"price"</span><span class="p">:</span> <span class="mf">2.50</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Oatmeal Raisin"</span><span class="p">,</span> <span class="s2">"price"</span><span class="p">:</span> <span class="mf">2.00</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Peanut Butter"</span><span class="p">,</span> <span class="s2">"price"</span><span class="p">:</span> <span class="mf">2.75</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Snickerdoodle"</span><span class="p">,</span> <span class="s2">"price"</span><span class="p">:</span> <span class="mf">1.75</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Sugar"</span><span class="p">,</span> <span class="s2">"price"</span><span class="p">:</span> <span class="mf">1.50</span><span class="p">}</span>
+<span class="p">]</span>
+
+<span class="c1"># Record the start time</span>
+<span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+
+<span class="c1"># Sort the list of people based on their age using the merge_sort function</span>
+<span class="n">sorted_arr</span> <span class="o">=</span> <span class="n">merge_sort</span><span class="p">(</span><span class="n">cookie_prices</span><span class="p">,</span> <span class="s2">"price"</span><span class="p">)</span>
+
+<span class="c1"># Record the end time</span>
+<span class="n">end_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+
+<span class="c1"># Print the sorted array and the time taken to sort it</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Sorted array:"</span><span class="p">,</span> <span class="n">sorted_arr</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Time taken:"</span><span class="p">,</span> <span class="n">end_time</span> <span class="o">-</span> <span class="n">start_time</span><span class="p">,</span> <span class="s2">"seconds"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Sorted array: [{'name': 'Sugar', 'price': 1.5}, {'name': 'Snickerdoodle', 'price': 1.75}, {'name': 'Oatmeal Raisin', 'price': 2.0}, {'name': 'Chocolate Chip', 'price': 2.5}, {'name': 'Peanut Butter', 'price': 2.75}]
+Time taken: 5.650520324707031e-05 seconds
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
+
+<span class="k">def</span> <span class="nf">merge_sort</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
+    <span class="sd">"""</span>
+<span class="sd">    This function sorts the given array of dictionaries using the merge sort algorithm.</span>
+<span class="sd">    The sorting is done based on the value of the given key in each dictionary.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">    - arr: list of dictionaries to be sorted</span>
+<span class="sd">    - key: key in each dictionary to be used for sorting</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">    - sorted_arr: sorted list of dictionaries</span>
+<span class="sd">    """</span>
+    <span class="c1"># If the length of the array is greater than 1, split it into two halves</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">mid</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>
+        <span class="n">left_half</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[:</span><span class="n">mid</span><span class="p">]</span>
+        <span class="n">right_half</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[</span><span class="n">mid</span><span class="p">:]</span>
+
+        <span class="c1"># Recursively sort the left and right halves</span>
+        <span class="n">merge_sort</span><span class="p">(</span><span class="n">left_half</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
+        <span class="n">merge_sort</span><span class="p">(</span><span class="n">right_half</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
+
+        <span class="c1"># Merge the sorted halves</span>
+        <span class="n">i</span> <span class="o">=</span> <span class="n">j</span> <span class="o">=</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">left_half</span><span class="p">)</span> <span class="ow">and</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">right_half</span><span class="p">):</span>
+            <span class="c1"># Compare the values of the given key in the left and right halves</span>
+            <span class="k">if</span> <span class="n">left_half</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">key</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">right_half</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="n">key</span><span class="p">]:</span>
+                <span class="c1"># If the value in the left half is smaller, add it to the sorted array</span>
+                <span class="n">arr</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">left_half</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+                <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="c1"># If the value in the right half is smaller, add it to the sorted array</span>
+                <span class="n">arr</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">right_half</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+                <span class="n">j</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="n">k</span> <span class="o">+=</span> <span class="mi">1</span>
+
+        <span class="c1"># Add any remaining elements from the left half to the sorted array</span>
+        <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">left_half</span><span class="p">):</span>
+            <span class="n">arr</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">left_half</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+            <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="n">k</span> <span class="o">+=</span> <span class="mi">1</span>
+
+        <span class="c1"># Add any remaining elements from the right half to the sorted array</span>
+        <span class="k">while</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">right_half</span><span class="p">):</span>
+            <span class="n">arr</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">right_half</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+            <span class="n">j</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="n">k</span> <span class="o">+=</span> <span class="mi">1</span>
+
+    <span class="c1"># Return the sorted array</span>
+    <span class="k">return</span> <span class="n">arr</span>
+
+<span class="c1"># Example usage</span>
+<span class="n">list_of_people</span> <span class="o">=</span> <span class="p">[</span>
+<span class="p">{</span><span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Risa"</span><span class="p">,</span> <span class="s2">"age"</span><span class="p">:</span> <span class="mi">18</span><span class="p">,</span> <span class="s2">"city"</span><span class="p">:</span> <span class="s2">"New York"</span><span class="p">},</span>
+<span class="p">{</span><span class="s2">"name"</span><span class="p">:</span> <span class="s2">"John"</span><span class="p">,</span> <span class="s2">"age"</span><span class="p">:</span> <span class="mi">63</span><span class="p">,</span> <span class="s2">"city"</span><span class="p">:</span> <span class="s2">"Eugene"</span><span class="p">},</span>
+<span class="p">{</span><span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Shekar"</span><span class="p">,</span> <span class="s2">"age"</span><span class="p">:</span> <span class="mi">18</span><span class="p">,</span> <span class="s2">"city"</span><span class="p">:</span> <span class="s2">"San Francisco"</span><span class="p">},</span>
+<span class="p">{</span><span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Ryan"</span><span class="p">,</span> <span class="s2">"age"</span><span class="p">:</span> <span class="mi">21</span><span class="p">,</span> <span class="s2">"city"</span><span class="p">:</span> <span class="s2">"Los Angeles"</span><span class="p">}</span>
+<span class="p">]</span>
+
+<span class="c1"># Record the start time</span>
+<span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+
+<span class="c1"># Sort the list of people based on their age using the merge_sort function</span>
+<span class="n">sorted_arr</span> <span class="o">=</span> <span class="n">merge_sort</span><span class="p">(</span><span class="n">list_of_people</span><span class="p">,</span> <span class="s2">"age"</span><span class="p">)</span>
+
+<span class="c1"># Record the end time</span>
+<span class="n">end_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+
+<span class="c1"># Print the sorted array and the time taken to sort it</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Sorted array:"</span><span class="p">,</span> <span class="n">sorted_arr</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Time taken:"</span><span class="p">,</span> <span class="n">end_time</span> <span class="o">-</span> <span class="n">start_time</span><span class="p">,</span> <span class="s2">"seconds"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Sorted array: [{'name': 'Shekar', 'age': 18, 'city': 'San Francisco'}, {'name': 'Risa', 'age': 18, 'city': 'New York'}, {'name': 'Ryan', 'age': 21, 'city': 'Los Angeles'}, {'name': 'John', 'age': 63, 'city': 'Eugene'}]
+Time taken: 4.076957702636719e-05 seconds
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 

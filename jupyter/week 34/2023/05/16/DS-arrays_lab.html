@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      11 min read
+      14 min read
     
 </span></p>
 
@@ -222,6 +222,12 @@ window.onload = wrap_img;
 
 <span class="k">def</span> <span class="nf">test_matrices</span><span class="p">():</span>
     <span class="c1"># setup some text matrices</span>
+    <span class="n">tree</span> <span class="o">=</span> <span class="p">[[</span><span class="s2">"   *"</span><span class="p">,],</span>
+            <span class="p">[</span><span class="s2">"  /|"</span><span class="p">],</span>
+            <span class="p">[</span><span class="s2">" ////"</span><span class="p">],</span>
+            <span class="p">[</span><span class="s2">"//////"</span><span class="p">],</span>
+            <span class="p">[</span><span class="s2">"  ||"</span><span class="p">]]</span>
+    
     <span class="n">keypad</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
               <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
               <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span>
@@ -243,7 +249,8 @@ window.onload = wrap_img;
     <span class="n">matrices</span> <span class="o">=</span> <span class="p">[</span>
         <span class="p">[</span><span class="s2">"Keypad"</span><span class="p">,</span> <span class="n">keypad</span><span class="p">],</span> 
         <span class="p">[</span><span class="s2">"Keyboard"</span><span class="p">,</span> <span class="n">keyboard</span><span class="p">],</span> 
-        <span class="p">[</span><span class="s2">"Number Systems"</span><span class="p">,</span> <span class="n">numbers</span><span class="p">]</span>
+        <span class="p">[</span><span class="s2">"Number Systems"</span><span class="p">,</span> <span class="n">numbers</span><span class="p">],</span>
+        <span class="p">[</span><span class="s2">"Tree"</span><span class="p">,</span> <span class="n">tree</span><span class="p">]</span>
     <span class="p">]</span>
 
     <span class="c1"># loop 2D matrix with returning list in [key, value] arrangement</span>
@@ -323,6 +330,26 @@ For loop with shortcut (*) row expansion
 0 1 2 3 4 5 6 7 8 9
 0 1 2 3 4 5 6 7 8 9 A B C D E F
 
+Tree 5 x ~1
+Classic nested loops using ij indexes
+   * 
+  /| 
+ //// 
+////// 
+  || 
+Enhanced nested for loops
+   * 
+  /| 
+ //// 
+////// 
+  || 
+For loop with shortcut (*) row expansion
+   *
+  /|
+ ////
+//////
+  ||
+
 </pre>
 </div>
 </div>
@@ -362,20 +389,20 @@ For loop with shortcut (*) row expansion
 <span class="cm">* Creator: Nighthawk Coding Society</span>
 <span class="cm">Construct a two-dimensional array in JS</span>
 <span class="cm">*/</span>
-
-<span class="kd">var</span> <span class="nx">arr2D</span> <span class="o">=</span> <span class="p">[];</span>
-<span class="kd">var</span> <span class="nx">rows</span> <span class="o">=</span> <span class="mf">3</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">arr2D</span> <span class="o">=</span> <span class="p">[[</span><span class="mf">1</span><span class="p">,</span> <span class="mf">2</span><span class="p">,</span> <span class="mf">3</span><span class="p">],</span>
+              <span class="p">[</span><span class="mf">4</span><span class="p">,</span> <span class="mf">5</span><span class="p">,</span> <span class="mf">6</span><span class="p">],</span>
+              <span class="p">[</span><span class="mf">7</span><span class="p">,</span> <span class="mf">8</span><span class="p">,</span> <span class="mf">9</span><span class="p">],</span>
+              <span class="p">[</span><span class="s2">" "</span><span class="p">,</span> <span class="mf">0</span><span class="p">,</span> <span class="s2">" "</span><span class="p">]];</span>
+<span class="kd">var</span> <span class="nx">rows</span> <span class="o">=</span> <span class="mf">4</span><span class="p">;</span>
 <span class="kd">var</span> <span class="nx">cols</span> <span class="o">=</span> <span class="mf">4</span><span class="p">;</span>
  
 <span class="c1">// Loop to initialize 2D array elements</span>
 <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">rows</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
     <span class="nx">arr2D</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span><span class="o">=</span><span class="p">[];</span>
     <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">j</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;</span> <span class="nx">cols</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="nx">arr2D</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="nx">j</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"r:"</span> <span class="o">+</span> <span class="nx">i</span> <span class="o">+</span> <span class="s2">"c:"</span> <span class="o">+</span> <span class="nx">j</span><span class="p">;</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr2D</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="nx">j</span><span class="p">]);</span>
     <span class="p">}</span>
 <span class="p">}</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr2D</span><span class="p">);</span>
-<span class="nx">element</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="nx">arr2D</span><span class="p">);</span>
 </pre></div>
 
     </div>
@@ -390,29 +417,29 @@ For loop with shortcut (*) row expansion
 
 
 
-<div id="b05c0f7d-7553-40ec-86db-4e4cd83f25c5"></div>
+<div id="837e217f-5438-4b87-85b3-c45a405ccc4e"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#b05c0f7d-7553-40ec-86db-4e4cd83f25c5');
+var element = $('#837e217f-5438-4b87-85b3-c45a405ccc4e');
 
 /*
 * Creator: Nighthawk Coding Society
 Construct a two-dimensional array in JS
 */
-
-var arr2D = [];
-var rows = 3;
+var arr2D = [[1, 2, 3],
+              [4, 5, 6],
+              [7, 8, 9],
+              [" ", 0, " "]];
+var rows = 4;
 var cols = 4;
  
 // Loop to initialize 2D array elements
 for (var i = 0; i < rows; i++) {
     arr2D[i]=[];
     for (var j = 0; j < cols; j++) {
-        arr2D[i][j] = "r:" + i + "c:" + j;
+        console.log(arr2D[i][j]);
     }
 }
-console.log(arr2D);
-element.append(arr2D);
 
 </script>
 </div>
@@ -553,6 +580,120 @@ element.append(arr2D);
 <pre>No more monkeys jumping on the bed
 0000000000000000000000000000000000
              THE END              
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">clear_output</span>
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="c1"># ANSI Color Codes</span>
+    <span class="n">Red</span> <span class="o">=</span> <span class="s2">"</span><span class="se">\u001b</span><span class="s2">[31m"</span>
+    <span class="n">Green</span> <span class="o">=</span> <span class="s2">"</span><span class="se">\u001b</span><span class="s2">[32m"</span>
+    <span class="n">Yellow</span> <span class="o">=</span> <span class="s2">"</span><span class="se">\u001b</span><span class="s2">[33m"</span>
+    <span class="n">Blue</span> <span class="o">=</span> <span class="s2">"</span><span class="se">\u001b</span><span class="s2">[34m"</span>
+    <span class="n">Magenta</span> <span class="o">=</span> <span class="s2">"</span><span class="se">\u001b</span><span class="s2">[35m"</span>
+
+    <span class="sd">""" 2D array data assignment """</span>
+    <span class="n">monkeys</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="p">[</span>
+            <span class="n">Red</span> <span class="o">+</span> <span class="s2">"ʕง ͠° ͟ل͜ ͡°)ʔ "</span><span class="p">,</span>  <span class="c1"># [0][0] eyes</span>
+            <span class="n">Red</span> <span class="o">+</span> <span class="s2">"  </span><span class="se">\\</span><span class="s2">_⏄_/  "</span><span class="p">,</span>  <span class="c1"># [0][1] chin</span>
+            <span class="n">Red</span> <span class="o">+</span> <span class="s2">"  --0--   "</span><span class="p">,</span>  <span class="c1"># [0][2] body</span>
+            <span class="n">Red</span> <span class="o">+</span> <span class="s2">"  ⎛   ⎞   "</span>  <span class="c1"># [0][3] legs</span>
+        <span class="p">],</span>
+        <span class="p">[</span>
+            <span class="n">Green</span> <span class="o">+</span> <span class="s2">" ʕ༼ ◕_◕ ༽ʔ "</span><span class="p">,</span>  <span class="c1"># [1][0]</span>
+            <span class="n">Green</span> <span class="o">+</span> <span class="s2">"  </span><span class="se">\\</span><span class="s2">_⎏_/  "</span><span class="p">,</span>
+            <span class="n">Green</span> <span class="o">+</span> <span class="s2">"  ++1++  "</span><span class="p">,</span>
+            <span class="n">Green</span> <span class="o">+</span> <span class="s2">"   ⌋ ⌊   "</span>
+        <span class="p">],</span>
+        <span class="p">[</span>
+            <span class="n">Yellow</span> <span class="o">+</span> <span class="s2">" ʕ(▀ ⍡ ▀)ʔ"</span><span class="p">,</span>  <span class="c1"># [2][0]</span>
+            <span class="n">Yellow</span> <span class="o">+</span> <span class="s2">"  </span><span class="se">\\</span><span class="s2">_⎐_/ "</span><span class="p">,</span>
+            <span class="n">Yellow</span> <span class="o">+</span> <span class="s2">"  &lt;-2-&gt;  "</span><span class="p">,</span>
+            <span class="n">Yellow</span> <span class="o">+</span> <span class="s2">"  〈  〉 "</span>
+        <span class="p">],</span>
+        <span class="p">[</span>
+            <span class="n">Blue</span> <span class="o">+</span> <span class="s2">"ʕ ͡° ͜ʖ ° ͡ʔ"</span><span class="p">,</span>  <span class="c1"># [3][0]</span>
+            <span class="n">Blue</span> <span class="o">+</span> <span class="s2">"  </span><span class="se">\\</span><span class="s2">_⍾_/  "</span><span class="p">,</span>
+            <span class="n">Blue</span> <span class="o">+</span> <span class="s2">"  ==3==  "</span><span class="p">,</span>
+            <span class="n">Blue</span> <span class="o">+</span> <span class="s2">"  _/ </span><span class="se">\\</span><span class="s2">_  "</span>
+        <span class="p">],</span>
+        <span class="p">[</span>
+            <span class="n">Magenta</span> <span class="o">+</span> <span class="s2">"  (◕‿◕✿) "</span><span class="p">,</span>  <span class="c1"># [4][0]</span>
+            <span class="n">Magenta</span> <span class="o">+</span> <span class="s2">"  </span><span class="se">\\</span><span class="s2">_⍾_/ "</span><span class="p">,</span>  <span class="c1"># [4][1]</span>
+            <span class="n">Magenta</span> <span class="o">+</span> <span class="s2">"  ==4==  "</span><span class="p">,</span>  <span class="c1"># [4][2]</span>
+            <span class="n">Magenta</span> <span class="o">+</span> <span class="s2">"  _/ </span><span class="se">\\</span><span class="s2">_ "</span>  <span class="c1"># [4][3]</span>
+        <span class="p">]</span>
+    <span class="p">]</span>
+
+    <span class="sd">""" 2D array program logic """</span>
+    <span class="c1"># iterate through monkeys</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">monkeys</span><span class="p">),</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Nursery Rhyme"</span><span class="p">)</span>  <span class="c1"># identification message</span>
+
+        <span class="c1"># this print statement shows current count of Monkeys</span>
+        <span class="c1"># concatenation (+) of the loop variable and string to form a countdown message</span>
+        <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" little monkeys jumping on the bed..."</span><span class="p">)</span>
+
+        <span class="c1"># iterate through monkey parts</span>
+        <span class="k">for</span> <span class="n">part</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">monkeys</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
+            <span class="c1"># iterate through monkeys in countdown</span>
+            <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+                <span class="c1"># prints specific part of the monkey from the 2D cell</span>
+                <span class="nb">print</span><span class="p">(</span><span class="n">monkeys</span><span class="p">[</span><span class="n">row</span><span class="p">][</span><span class="n">part</span><span class="p">],</span> <span class="n">end</span><span class="o">=</span><span class="s2">" "</span><span class="p">)</span>
+
+            <span class="c1"># print a new line after each part of the monkeys</span>
+            <span class="nb">print</span><span class="p">()</span>
+
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\u001b</span><span class="s2">[0m"</span><span class="p">)</span>  <span class="c1"># reset color</span>
+        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+
+    <span class="c1"># out of all the loops, prints finishing messages</span>
+    <span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"No more monkeys jumping on the bed"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"0000000000000000000000000000000000"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"             THE END              "</span><span class="p">)</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Nursery Rhyme
+1 little monkeys jumping on the bed...
+<span class="ansi-red-fg">ʕง ͠° ͟ل͜ ͡°)ʔ  
+</span><span class="ansi-red-fg">  \_⏄_/   
+</span><span class="ansi-red-fg">  --0--    
+</span><span class="ansi-red-fg">  ⎛   ⎞    
+</span>
 </pre>
 </div>
 </div>
@@ -919,6 +1060,51 @@ element.append(arr2D);
 </div>
 </div>
 
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">time</span> <span class="c1"># used for delay</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">clear_output</span>  <span class="c1"># jupyter specific clear</span>
+
+
+<span class="k">def</span> <span class="nf">car_print</span><span class="p">(</span><span class="n">position</span><span class="p">):</span>  <span class="c1"># print ship with colors and leading spaces according to position</span>
+    <span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    
+    <span class="n">sp</span> <span class="o">=</span> <span class="s2">" "</span> <span class="o">*</span> <span class="n">position</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">sp</span> <span class="o">+</span> <span class="s2">" _______"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">sp</span> <span class="o">+</span> <span class="s2">" |  |  |"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">sp</span> <span class="o">+</span> <span class="s2">" -------"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">sp</span> <span class="o">+</span> <span class="s2">"|       |"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">sp</span> <span class="o">+</span> <span class="s2">"-O-----O-"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"--"</span><span class="o">*</span><span class="mi">32</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">car</span><span class="p">():</span>  <span class="c1"># ship function, loop/controller for animation speed and times</span>
+    <span class="c1"># loop control variables</span>
+    <span class="n">start</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># start at zero</span>
+    <span class="n">distance</span> <span class="o">=</span> <span class="mi">60</span>  <span class="c1"># how many times to repeat</span>
+    <span class="n">step</span> <span class="o">=</span> <span class="mi">2</span>  <span class="c1"># count by 2</span>
+
+    <span class="c1"># loop purpose is to animate ship sailing</span>
+    <span class="k">for</span> <span class="n">position</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">distance</span><span class="p">,</span> <span class="n">step</span><span class="p">):</span>
+        <span class="n">car_print</span><span class="p">(</span><span class="n">position</span><span class="p">)</span>  <span class="c1"># call to function with parameter</span>
+        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="o">.</span><span class="mi">1</span><span class="p">)</span>
+
+        
+<span class="n">car</span><span class="p">()</span> <span class="c1"># activate/call ship function</span>
+</pre></div>
+
+    </div>
 </div>
 </div>
 
