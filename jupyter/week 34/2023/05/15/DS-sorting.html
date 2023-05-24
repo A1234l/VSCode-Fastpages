@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      11 min read
+      12 min read
     
 </span></p>
 
@@ -135,6 +135,7 @@ window.onload = wrap_img;
 </li>
 <li class="toc-entry toc-h1"><a href="#Sorting-Words">Sorting Words </a>
 <ul>
+<li class="toc-entry toc-h3"><a href="#Sorted-list:">Sorted list: </a></li>
 <li class="toc-entry toc-h2"><a href="#Discuss">Discuss </a></li>
 <li class="toc-entry toc-h2"><a href="#HACKS">HACKS </a></li>
 </ul>
@@ -297,10 +298,6 @@ Take about 5 minutes to read about your algorithm and be ready to explain it to 
 <span class="n">words</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
     <span class="n">words</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">english_words</span><span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">english_words</span><span class="p">))])</span>
-
-<span class="c1"># sort(_words) = sortedWords</span>
-<span class="c1"># print(sortedWords)</span>
-
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Random List"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">words</span><span class="p">)</span>
 </pre></div>
@@ -316,7 +313,73 @@ Take about 5 minutes to read about your algorithm and be ready to explain it to 
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Random List
-['serous', 'pyrrolidine', 'canty', 'inchworm', 'pimpliness', 'empty', 'gashy', 'elephantine', 'guestwise', 'tamas']
+['provinculum', 'slangishly', 'fortin', 'panatela', 'wowserian', 'undeluged', 'grumphie', 'unhatingly', 'Mormoness', 'talpacoti']
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>[nltk_data] Downloading package words to /home/alanl88/nltk_data...
+[nltk_data]   Package words is already up-to-date!
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Sorted-list:">
+<a class="anchor" href="#Sorted-list:" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sorted list:<a class="anchor-link" href="#Sorted-list:"> </a>
+</h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">nltk</span>
+<span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">'words'</span><span class="p">)</span>  <span class="c1"># Download the word list (only required once)</span>
+
+<span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="kn">import</span> <span class="n">words</span>
+
+<span class="n">english_words</span> <span class="o">=</span> <span class="n">words</span><span class="o">.</span><span class="n">words</span><span class="p">()</span>
+
+<span class="n">words</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="n">words</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">english_words</span><span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">english_words</span><span class="p">))])</span>
+
+<span class="n">sorted_words</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">words</span><span class="p">)</span>  <span class="c1"># Sort the words alphabetically</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Sorted List:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sorted_words</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Sorted List:
+['afraidness', 'figurine', 'incision', 'incurvation', 'mercantility', 'negatedness', 'selenigenous', 'soapbark', 'strounge', 'vivax']
 </pre>
 </div>
 </div>
@@ -346,10 +409,22 @@ Take about 5 minutes to read about your algorithm and be ready to explain it to 
 <ul>
 <li>When should you use each algorithm? What makes an algorithm the right choice?</li>
 <li>Given the following lists...<ul>
-<li>[0, 2, 6, 4, 8, 10] <strong>Insertion or bubble</strong> works best because it has a time complexity of O(n^2) so it is suitable for small data sets. There is only one swap needed to sort this list so insertion and bubble works best.</li>
-<li>[Elephant, Banana, Cat, Dog, Apple] <strong>Selection</strong> because the largest values are in the first elements and the smaller values are in the last elements. So, selection works best. Selection also has a O(n^2) time complexity so it is suited for small lists.</li>
-<li>[29, 13, 83, 47, 32, 78, 100, 60, 65, 15, 24, 9, 40, 68, 53, 8, 90, 58, 39, 32, 34, 91, 74, 94, 49, 87, 34, 87, 23, 17, 27, 2, 38, 58, 84, 15, 9, 46, 74, 40, 44, 8, 55, 28, 81, 92, 81, 88, 53, 38, 19, 21, 9, 54, 21, 67, 3, 41, 3, 74, 13, 71, 70, 45, 5, 36, 80, 64, 97, 86, 73, 74, 94, 79, 49, 32, 20, 68, 64, 69, 1, 77, 31, 56, 100, 80, 48, 75, 85, 93, 67, 57, 26, 56, 43, 53, 59, 28, 67, 50] <strong>Merge sort</strong> works best in this one because its time complexity is O(nlog(n)), which is suitable for sorting large lists. It is also able to take up less memory.
+<li>[0, 2, 6, 4, 8, 10] <ul>
+<li>
+<strong>Insertion or bubble</strong> works best because it has a time complexity of O(n^2) so it is suitable for small data sets. There is only one swap needed to sort this list so insertion and bubble works best.</li>
+</ul>
+</li>
+<li>[Elephant, Banana, Cat, Dog, Apple]<ul>
+<li>
+<strong>Selection</strong> because the largest values are in the first elements and the smaller values are in the last elements. So, selection works best. Selection also has a O(n^2) time complexity so it is suited for small lists.</li>
+</ul>
+</li>
+<li>[29, 13, 83, 47, 32, 78, 100, 60, 65, 15, 24, 9, 40, 68, 53, 8, 90, 58, 39, 32, 34, 91, 74, 94, 49, 87, 34, 87, 23, 17, 27, 2, 38, 58, 84, 15, 9, 46, 74, 40, 44, 8, 55, 28, 81, 92, 81, 88, 53, 38, 19, 21, 9, 54, 21, 67, 3, 41, 3, 74, 13, 71, 70, 45, 5, 36, 80, 64, 97, 86, 73, 74, 94, 79, 49, 32, 20, 68, 64, 69, 1, 77, 31, 56, 100, 80, 48, 75, 85, 93, 67, 57, 26, 56, 43, 53, 59, 28, 67, 50] <ul>
+<li>
+<strong>Merge sort</strong> works best in this one because its time complexity is O(nlog(n)), which is suitable for sorting large lists. It is also able to take up less memory.
 Select the algorithm you believe is best for each, explain.</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -373,8 +448,14 @@ Select the algorithm you believe is best for each, explain.</li>
 <li>
 <p>Run code and then research and answer these questions...</p>
 <ul>
-<li>Is a list and/or dictionary in python considered a primitive or collection type?  Why?</li>
-<li>Is the list passed into bubble sort "pass-by-value" or "pass-by-reference? Describe why in relation to output.</li>
+<li>Is a list and/or dictionary in python considered a primitive or collection type?  Why?<ul>
+<li>In Python, a list and a dictionary are considered collection types. This is because they can hold multiple values of different types in a single variable. Primitive types, on the other hand, can only hold a single value of a specific type.</li>
+</ul>
+</li>
+<li>Is the list passed into bubble sort "pass-by-value" or "pass-by-reference? Describe why in relation to output.<ul>
+<li>The list passed into bubble sort is "pass-by-reference". This is because the original list is modified in place, rather than creating a new copy of the list. Therefore, any changes made to the list inside the function are reflected in the original list outside the function.</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>
