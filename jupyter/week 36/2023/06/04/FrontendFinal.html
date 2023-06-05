@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Frontend Final Project Description | Alan’s Fastpages</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Frontend Final Project Description" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Here is the guide to our frontend code for our Geotourism final project." />
+<meta property="og:description" content="Here is the guide to our frontend code for our Geotourism final project." />
+<link rel="canonical" href="https://a1234l.github.io/VSCode-Fastpages/jupyter/week%2036/2023/06/04/FrontendFinal.html" />
+<meta property="og:url" content="https://a1234l.github.io/VSCode-Fastpages/jupyter/week%2036/2023/06/04/FrontendFinal.html" />
+<meta property="og:site_name" content="Alan’s Fastpages" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-06-04T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Frontend Final Project Description" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-06-04T00:00:00-05:00","datePublished":"2023-06-04T00:00:00-05:00","description":"Here is the guide to our frontend code for our Geotourism final project.","headline":"Frontend Final Project Description","mainEntityOfPage":{"@type":"WebPage","@id":"https://a1234l.github.io/VSCode-Fastpages/jupyter/week%2036/2023/06/04/FrontendFinal.html"},"url":"https://a1234l.github.io/VSCode-Fastpages/jupyter/week%2036/2023/06/04/FrontendFinal.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/VSCode-Fastpages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://a1234l.github.io/VSCode-Fastpages/feed.xml" title="Alan's Fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/VSCode-Fastpages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/VSCode-Fastpages/">Alan&#39;s Fastpages</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/VSCode-Fastpages/_pages/01_Notes.html">Notes and Student Lessons</a><a class="page-link" href="/VSCode-Fastpages/_pages/02_Vocab.html">Vocab</a><a class="page-link" href="/VSCode-Fastpages/_pages/03_AP_World.html">AP World</a><a class="page-link" href="/VSCode-Fastpages/_pages/04_Frontend.html">Frontend</a><a class="page-link" href="/VSCode-Fastpages/about/">About Me</a><a class="page-link" href="/VSCode-Fastpages/search/">Search</a><a class="page-link" href="/VSCode-Fastpages/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Frontend Final Project Description</h1><p class="page-description">Here is the guide to our frontend code for our Geotourism final project.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-06-04T00:00:00-05:00" itemprop="datePublished">
+        Jun 4, 2023
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      20 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/VSCode-Fastpages/categories/#jupyter">jupyter</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/VSCode-Fastpages/categories/#Week 36">Week 36</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/A1234l/VSCode-Fastpages/tree/master/_notebooks/2023-06-04-FrontendFinal.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/VSCode-Fastpages/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/A1234l/VSCode-Fastpages/master?filepath=_notebooks%2F2023-06-04-FrontendFinal.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/VSCode-Fastpages/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/A1234l/VSCode-Fastpages/blob/master/_notebooks/2023-06-04-FrontendFinal.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/VSCode-Fastpages/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2FA1234l%2FVSCode-Fastpages%2Fblob%2Fmaster%2F_notebooks%2F2023-06-04-FrontendFinal.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/VSCode-Fastpages/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#Creating-Vertex-and-Graph-Classes">Creating Vertex and Graph Classes </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Creating-things-using-the-Graph-and-Vertex-classes">Creating things using the Graph and Vertex classes </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Storing-vertices-into-each-graph">Storing vertices into each graph </a></li>
+<li class="toc-entry toc-h1"><a href="#Heuristic-Calculation-Method">Heuristic Calculation Method </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Heuristic-Calculations-Continued">Heuristic Calculations Continued </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Drawing-the-Heuristic-Graph">Drawing the Heuristic Graph </a></li>
+<li class="toc-entry toc-h1"><a href="#Moving-onto-the-Game-function">Moving onto the Game function </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Initialization-of-Variables">Initialization of Variables </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Defining-Adjacency-Relationships-for-the-Heuristic-Graph">Defining Adjacency Relationships for the Heuristic Graph </a></li>
+<li class="toc-entry toc-h1"><a href="#Drawing-the-User's-Graph">Drawing the User&#39;s Graph </a></li>
+<li class="toc-entry toc-h1"><a href="#Handling-Mouse-Event-functions">Handling Mouse Event functions </a></li>
+<li class="toc-entry toc-h1"><a href="#Mouse-Down">Mouse Down </a></li>
+<li class="toc-entry toc-h1"><a href="#Mouse-Move">Mouse Move </a></li>
+<li class="toc-entry toc-h1"><a href="#Mouse-Up">Mouse Up </a></li>
+<li class="toc-entry toc-h1"><a href="#Extra-Handler:-Handling-the-Reset-Button">Extra Handler: Handling the Reset Button </a></li>
+<li class="toc-entry toc-h1"><a href="#Utilizing-Event-Handlers">Utilizing Event Handlers </a></li>
+<li class="toc-entry toc-h1"><a href="#Page-Transitions">Page Transitions </a></li>
+<li class="toc-entry toc-h1"><a href="#Page-Transitions-in-HTML">Page Transitions in HTML </a></li>
+<li class="toc-entry toc-h1"><a href="#POST-Request">POST Request </a></li>
+<li class="toc-entry toc-h1"><a href="#Styling">Styling </a></li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2023-06-04-FrontendFinal.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Creating-Vertex-and-Graph-Classes">
+<a class="anchor" href="#Creating-Vertex-and-Graph-Classes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Creating Vertex and Graph Classes<a class="anchor-link" href="#Creating-Vertex-and-Graph-Classes"> </a>
+</h1>
+<ul>
+<li>
+<strong>class Vertex</strong> allows the coder to easily add in a new vertex on the graph by simply using JSON and writing {id: "", x: , y: }. This allows us to manipulate the points on the graph much more easily.</li>
+<li>
+<strong>class Graph</strong> allows the coder to easily add in a graph. We added two graphs: one for allowing the user to draw their own line connections, another for displaying the shortest path using heuristic algorithm. Only one graph can be displayed on the canvas at a time.<ul>
+<li>calculateDistance() function is used to calculate distances in the heuristic graph.</li>
+<li>calculateTotalDistance() function is used to calculate distances in the user interactive graph.</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-javascript"><pre><span></span><span class="c1">// Vertex class to represent each HTML element</span>
+<span class="kr">class</span> <span class="nx">Vertex</span> <span class="p">{</span>
+    <span class="nx">constructor</span><span class="p">(</span><span class="nx">id</span><span class="p">,</span> <span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">id</span> <span class="o">=</span> <span class="nx">id</span><span class="p">;</span> <span class="c1">// id of the vertex</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">x</span> <span class="o">=</span> <span class="nx">x</span><span class="p">;</span> <span class="c1">// x-coordinate of the vertex</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">y</span> <span class="o">=</span> <span class="nx">y</span><span class="p">;</span> <span class="c1">// y-coordinate of the vertex</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">adjacent</span> <span class="o">=</span> <span class="p">[];</span> <span class="c1">// array to store adjacent vertices</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">connected</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span> <span class="c1">// flag to indicate if vertex is connected</span>
+    <span class="p">}</span>
+    <span class="c1">// Function to add an adjacent vertex</span>
+    <span class="nx">addAdjacent</span><span class="p">(</span><span class="nx">vertex</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">adjacent</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">vertex</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="c1">// Graph class to hold all the vertices</span>
+    <span class="kr">class</span> <span class="nx">Graph</span> <span class="p">{</span>
+    <span class="nx">constructor</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">vertices</span> <span class="o">=</span> <span class="p">[];</span> <span class="c1">// array to store all vertices</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">map</span> <span class="o">=</span> <span class="p">{};</span> <span class="c1">// hash map to store vertices by their ids</span>
+    <span class="p">}</span>
+    <span class="c1">// Function to add a vertex to the graph</span>
+    <span class="nx">addVertex</span><span class="p">(</span><span class="nx">vertex</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">vertices</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">vertex</span><span class="p">);</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">map</span><span class="p">[</span><span class="nx">vertex</span><span class="p">.</span><span class="nx">id</span><span class="p">]</span> <span class="o">=</span> <span class="nx">vertex</span><span class="p">;</span> <span class="c1">// add vertex to the map</span>
+    <span class="p">}</span>
+    <span class="c1">// Function to check if all vertices are connected</span>
+    <span class="nx">checkAllVerticesConnected</span><span class="p">()</span> <span class="p">{</span>
+        <span class="kr">const</span> <span class="nx">visited</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Set</span><span class="p">();</span> <span class="c1">// Set to store visited vertices</span>
+        <span class="kr">const</span> <span class="nx">stack</span> <span class="o">=</span> <span class="p">[];</span> <span class="c1">// Stack for DFS traversal</span>
+
+        <span class="c1">// Start DFS from the first vertex in the graph</span>
+        <span class="nx">stack</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">graph</span><span class="p">.</span><span class="nx">vertices</span><span class="p">[</span><span class="mf">0</span><span class="p">]);</span>
+
+        <span class="k">while</span> <span class="p">(</span><span class="nx">stack</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mf">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kr">const</span> <span class="nx">vertex</span> <span class="o">=</span> <span class="nx">stack</span><span class="p">.</span><span class="nx">pop</span><span class="p">();</span>
+        <span class="nx">visited</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">vertex</span><span class="p">);</span>
+
+        <span class="c1">// Add all adjacent unvisited vertices to the stack</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kr">const</span> <span class="nx">adjacentVertex</span> <span class="k">of</span> <span class="nx">vertex</span><span class="p">.</span><span class="nx">adjacent</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">visited</span><span class="p">.</span><span class="nx">has</span><span class="p">(</span><span class="nx">adjacentVertex</span><span class="p">))</span> <span class="p">{</span>
+            <span class="nx">stack</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">adjacentVertex</span><span class="p">);</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="p">}</span>
+
+    <span class="c1">// Check if all vertices are visited</span>
+    <span class="k">return</span> <span class="nx">visited</span><span class="p">.</span><span class="nx">size</span> <span class="o">===</span> <span class="nx">graph</span><span class="p">.</span><span class="nx">vertices</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="c1">// Function to calculate the Euclidean distance between two vertices</span>
+    <span class="nx">calculateDistance</span><span class="p">(</span><span class="nx">v1</span><span class="p">,</span> <span class="nx">v2</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kr">const</span> <span class="nx">dx</span> <span class="o">=</span> <span class="nx">v1</span><span class="p">.</span><span class="nx">x</span> <span class="o">-</span> <span class="nx">v2</span><span class="p">.</span><span class="nx">x</span><span class="p">;</span>
+        <span class="kr">const</span> <span class="nx">dy</span> <span class="o">=</span> <span class="nx">v1</span><span class="p">.</span><span class="nx">y</span> <span class="o">-</span> <span class="nx">v2</span><span class="p">.</span><span class="nx">y</span><span class="p">;</span>
+        <span class="k">return</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">sqrt</span><span class="p">(</span><span class="nx">dx</span> <span class="o">*</span> <span class="nx">dx</span> <span class="o">+</span> <span class="nx">dy</span> <span class="o">*</span> <span class="nx">dy</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="c1">// Function to calculate the total distance of all lines</span>
+    <span class="nx">calculateTotalDistance</span><span class="p">()</span> <span class="p">{</span>
+        <span class="kd">let</span> <span class="nx">totalDistance</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kr">const</span> <span class="nx">vertex</span> <span class="k">of</span> <span class="k">this</span><span class="p">.</span><span class="nx">vertices</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kr">const</span> <span class="nx">adjacentVertex</span> <span class="k">of</span> <span class="nx">vertex</span><span class="p">.</span><span class="nx">adjacent</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nx">totalDistance</span> <span class="o">+=</span> <span class="k">this</span><span class="p">.</span><span class="nx">calculateDistance</span><span class="p">(</span><span class="nx">vertex</span><span class="p">,</span> <span class="nx">adjacentVertex</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="nx">totalDistance</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Creating-things-using-the-Graph-and-Vertex-classes">
+<a class="anchor" href="#Creating-things-using-the-Graph-and-Vertex-classes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Creating things using the Graph and Vertex classes<a class="anchor-link" href="#Creating-things-using-the-Graph-and-Vertex-classes"> </a>
+</h2>
+<ul>
+<li>
+<strong>vertices</strong> array stores all of the points that are to be graphed on the canvas. The array can be manipulated based on user's menu selection(something that we will go over later in detail)<ul>
+<li>Note that points are still in the array but commented out, this allows the coder to know what locations are included in the game</li>
+</ul>
+</li>
+<li>
+<strong>const heuristic</strong> creates the graph of the shortest route among all points</li>
+<li>
+<strong>const graph</strong> creates the graph where the user can interact and connect points using drag and drop lines</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-javascript"><pre><span></span><span class="c1">// Define the vertices as an array of objects, points are commented out since user picks these points, not us</span>
+<span class="kd">let</span> <span class="nx">vertices</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="c1">// { id: "A", x: 150, y: 200 },</span>
+    <span class="c1">// { id: "B", x: 90, y: 200 },</span>
+    <span class="c1">// { id: "C", x: 95, y: 220 },</span>
+    <span class="c1">// { id: "D", x: 165, y: 230 },</span>
+    <span class="c1">// { id: "E", x: 316, y: 225 },</span>
+    <span class="c1">// { id: "F", x: 100, y: 276 },</span>
+    <span class="c1">// { id: "G", x: 235, y: 260 },</span>
+    <span class="c1">// { id: "H", x: 265, y: 270 },</span>
+    <span class="c1">// { id: "I", x: 360, y: 320 }, </span>
+    <span class="c1">// { id: "J", x: 370, y: 340 },</span>
+    <span class="c1">// { id: "O", x: 330, y: 360 },</span>
+    <span class="c1">// { id: "R", x: 310, y: 390 },</span>
+    <span class="c1">// { id: "T", x: 360, y: 385 },</span>
+    <span class="c1">// { id: "V", x: 360, y: 460 },</span>
+    <span class="c1">// { id: "W", x: 270, y: 480 },</span>
+    <span class="c1">// { id: "Z", x: 120, y: 530 },</span>
+    <span class="c1">// { id: "MissionTrails", x: 640, y: 50},</span>
+    <span class="c1">// { id: "Walmart", x: 500, y: 590},</span>
+    <span class="c1">// { id: "Costco", x: 670, y: 190}</span>
+    
+    <span class="c1">// Add more vertices here as needed</span>
+    <span class="p">];</span>
+
+<span class="c1">// Create heuristic graph</span>
+<span class="kr">const</span> <span class="nx">heuristic</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Graph</span><span class="p">();</span>
+
+<span class="c1">// Create the user drawing graph</span>
+<span class="kr">const</span> <span class="nx">graph</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Graph</span><span class="p">();</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Storing-vertices-into-each-graph">
+<a class="anchor" href="#Storing-vertices-into-each-graph" aria-hidden="true"><span class="octicon octicon-link"></span></a>Storing vertices into each graph<a class="anchor-link" href="#Storing-vertices-into-each-graph"> </a>
+</h1>
+<ul>
+<li>The vertices array is stored into both graphs in order to allow the graphs to be able to plot specific points.<ul>
+<li>Because both graphs will be using the same points at all times, two for loops are used to iterate through and store each point in the array vertices in each graph.</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-javascript"><pre><span></span><span class="c1">// Loop through the vertices array and create a new Vertex object for each one</span>
+<span class="k">for</span> <span class="p">(</span><span class="kr">const</span> <span class="nx">vertex</span> <span class="k">of</span> <span class="nx">vertices</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kr">const</span> <span class="nx">newVertex</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Vertex</span><span class="p">(</span><span class="nx">vertex</span><span class="p">.</span><span class="nx">id</span><span class="p">,</span> <span class="nx">vertex</span><span class="p">.</span><span class="nx">x</span><span class="p">,</span> <span class="nx">vertex</span><span class="p">.</span><span class="nx">y</span><span class="p">);</span>
+    <span class="nx">graph</span><span class="p">.</span><span class="nx">addVertex</span><span class="p">(</span><span class="nx">newVertex</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    
+    <span class="c1">// Loop through the vertices array and create a new Vertex object for each one</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kr">const</span> <span class="nx">vertex</span> <span class="k">of</span> <span class="nx">vertices</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kr">const</span> <span class="nx">newVertex</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Vertex</span><span class="p">(</span><span class="nx">vertex</span><span class="p">.</span><span class="nx">id</span><span class="p">,</span> <span class="nx">vertex</span><span class="p">.</span><span class="nx">x</span><span class="p">,</span> <span class="nx">vertex</span><span class="p">.</span><span class="nx">y</span><span class="p">);</span>
+        <span class="nx">heuristic</span><span class="p">.</span><span class="nx">addVertex</span><span class="p">(</span><span class="nx">newVertex</span><span class="p">);</span>
+    <span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Heuristic-Calculation-Method">
+<a class="anchor" href="#Heuristic-Calculation-Method" aria-hidden="true"><span class="octicon octicon-link"></span></a>Heuristic Calculation Method<a class="anchor-link" href="#Heuristic-Calculation-Method"> </a>
+</h1>
+<ul>
+<li>function <strong>generatePaths()</strong> is responsible for calculating the shortest route between all vertices.<ul>
+<li>This function partially uses a heuristic and requires a significant amount of computer calculations.</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-javascript"><pre><span></span><span class="c1">// Function to generate all possible paths that visit all vertices exactly once</span>
+<span class="kd">function</span> <span class="nx">generatePaths</span><span class="p">(</span><span class="nx">graph</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kr">const</span> <span class="nx">paths</span> <span class="o">=</span> <span class="p">[];</span>
+    <span class="kr">const</span> <span class="nx">visited</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Set</span><span class="p">();</span>
+    
+    <span class="kd">function</span> <span class="nx">dfs</span><span class="p">(</span><span class="nx">path</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">path</span><span class="p">.</span><span class="nx">length</span> <span class="o">===</span> <span class="nx">graph</span><span class="p">.</span><span class="nx">vertices</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">paths</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">path</span><span class="p">);</span>
+    <span class="k">return</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nx">graph</span><span class="p">.</span><span class="nx">vertices</span><span class="p">.</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">vertex</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">visited</span><span class="p">.</span><span class="nx">has</span><span class="p">(</span><span class="nx">vertex</span><span class="p">))</span> <span class="p">{</span>
+    <span class="nx">visited</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">vertex</span><span class="p">);</span>
+    <span class="nx">dfs</span><span class="p">([...</span><span class="nx">path</span><span class="p">,</span> <span class="nx">vertex</span><span class="p">]);</span>
+    <span class="nx">visited</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="nx">vertex</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="p">});</span>
+    <span class="p">}</span>
+
+    <span class="nx">graph</span><span class="p">.</span><span class="nx">vertices</span><span class="p">.</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">vertex</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="nx">visited</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">vertex</span><span class="p">);</span>
+    <span class="nx">dfs</span><span class="p">([</span><span class="nx">vertex</span><span class="p">]);</span>
+    <span class="nx">visited</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="nx">vertex</span><span class="p">);</span>
+    <span class="p">});</span>
+
+    <span class="k">return</span> <span class="nx">paths</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Heuristic-Calculations-Continued">
+<a class="anchor" href="#Heuristic-Calculations-Continued" aria-hidden="true"><span class="octicon octicon-link"></span></a>Heuristic Calculations Continued<a class="anchor-link" href="#Heuristic-Calculations-Continued"> </a>
+</h2>
+<ul>
+<li>function <strong>getPathDistance()</strong> calculates the distance of the heuristic path. This is eventually used to display the shortest distance in a form as an answer at the end.</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-javascript"><pre><span></span><span class="c1">// Function to calculate the total distance of heuristic path</span>
+<span class="kd">function</span> <span class="nx">getPathDistance</span><span class="p">(</span><span class="nx">path</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">distance</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">path</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mf">1</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">distance</span> <span class="o">+=</span> <span class="nx">heuristic</span><span class="p">.</span><span class="nx">calculateDistance</span><span class="p">(</span><span class="nx">path</span><span class="p">[</span><span class="nx">i</span><span class="p">],</span> <span class="nx">path</span><span class="p">[</span><span class="nx">i</span><span class="o">+</span><span class="mf">1</span><span class="p">]);</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">distance</span><span class="p">;</span>
+    <span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Drawing-the-Heuristic-Graph">
+<a class="anchor" href="#Drawing-the-Heuristic-Graph" aria-hidden="true"><span class="octicon octicon-link"></span></a>Drawing the Heuristic Graph<a class="anchor-link" href="#Drawing-the-Heuristic-Graph"> </a>
+</h1>
+<ul>
+<li>function <strong>drawShortestPath()</strong> is a function that is used to draw the shortest route between all points on the canvas.<ul>
+<li>This is a very convenient function as drawShortestPath() can be called anytime you want to display the shortest route between any points you create.</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-javascript"><pre><span></span><span class="c1">// Function to draw the shortest path on the canvas</span>
+<span class="kd">function</span> <span class="nx">drawShortestPath</span><span class="p">(</span><span class="nx">graph</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kr">const</span> <span class="nx">canvas</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"canvas"</span><span class="p">);</span>
+    <span class="kr">const</span> <span class="nx">ctx</span> <span class="o">=</span> <span class="nx">canvas</span><span class="p">.</span><span class="nx">getContext</span><span class="p">(</span><span class="s2">"2d"</span><span class="p">);</span>
+
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">clearRect</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span> <span class="mf">0</span><span class="p">,</span> <span class="nx">canvas</span><span class="p">.</span><span class="nx">width</span><span class="p">,</span> <span class="nx">canvas</span><span class="p">.</span><span class="nx">height</span><span class="p">);</span> <span class="c1">// clear the canvas</span>
+    
+    <span class="c1">// Generate all possible paths and find the shortest one</span>
+    <span class="kr">const</span> <span class="nx">paths</span> <span class="o">=</span> <span class="nx">generatePaths</span><span class="p">(</span><span class="nx">heuristic</span><span class="p">);</span>
+    <span class="kd">let</span> <span class="nx">shortestPath</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+    <span class="kd">let</span> <span class="nx">shortestDistance</span> <span class="o">=</span> <span class="kc">Infinity</span><span class="p">;</span>
+    <span class="nx">paths</span><span class="p">.</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">path</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="kr">const</span> <span class="nx">distance</span> <span class="o">=</span> <span class="nx">getPathDistance</span><span class="p">(</span><span class="nx">path</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">distance</span> <span class="o">&lt;</span> <span class="nx">shortestDistance</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">shortestPath</span> <span class="o">=</span> <span class="nx">path</span><span class="p">;</span>
+    <span class="nx">shortestDistance</span><span class="o">=</span> <span class="nx">distance</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="p">});</span>
+
+    <span class="c1">// Store the pixel length in a global variable called path_length</span>
+    <span class="kr">const</span> <span class="nx">path_length</span> <span class="o">=</span> <span class="nx">shortestDistance</span><span class="p">;</span>
+
+    <span class="c1">// Log the pixel length to the console</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Pixel length of shortest path:"</span><span class="p">,</span> <span class="nx">path_length</span><span class="p">);</span>
+
+    <span class="nx">shortestDistanceResult</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="p">((</span><span class="nx">path_length</span><span class="o">*</span><span class="mf">2</span><span class="p">)</span><span class="o">/</span><span class="mf">54</span><span class="p">).</span><span class="nx">toFixed</span><span class="p">(</span><span class="mf">2</span><span class="p">);</span>
+    <span class="nx">dummyCalcD</span> <span class="o">=</span> <span class="p">((</span><span class="nx">path_length</span><span class="o">*</span><span class="mf">2</span><span class="p">)</span><span class="o">/</span><span class="mf">54</span><span class="p">).</span><span class="nx">toFixed</span><span class="p">(</span><span class="mf">2</span><span class="p">);</span>
+    
+    <span class="c1">// Draw all vertices as black circles</span>
+    <span class="nx">graph</span><span class="p">.</span><span class="nx">vertices</span><span class="p">.</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">vertex</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span>
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">arc</span><span class="p">(</span><span class="nx">vertex</span><span class="p">.</span><span class="nx">x</span><span class="p">,</span> <span class="nx">vertex</span><span class="p">.</span><span class="nx">y</span><span class="p">,</span> <span class="mf">10</span><span class="p">,</span> <span class="mf">0</span><span class="p">,</span> <span class="mf">2</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">);</span>
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">fillStyle</span> <span class="o">=</span> <span class="s2">"#000000"</span><span class="p">;</span>
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">fill</span><span class="p">();</span>
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">closePath</span><span class="p">();</span>
+
+    <span class="p">});</span>
+
+    <span class="c1">// Draw the path as a red line</span>
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span>
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">strokeStyle</span> <span class="o">=</span> <span class="s2">"#FF0000"</span><span class="p">;</span>
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">lineWidth</span> <span class="o">=</span> <span class="mf">3</span><span class="p">;</span>
+
+    <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">shortestPath</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mf">1</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kr">const</span> <span class="nx">current</span> <span class="o">=</span> <span class="nx">shortestPath</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+    <span class="kr">const</span> <span class="nx">next</span> <span class="o">=</span> <span class="nx">shortestPath</span><span class="p">[</span><span class="nx">i</span><span class="o">+</span><span class="mf">1</span><span class="p">];</span>
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">moveTo</span><span class="p">(</span><span class="nx">current</span><span class="p">.</span><span class="nx">x</span><span class="p">,</span> <span class="nx">current</span><span class="p">.</span><span class="nx">y</span><span class="p">);</span>
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">lineTo</span><span class="p">(</span><span class="nx">next</span><span class="p">.</span><span class="nx">x</span><span class="p">,</span> <span class="nx">next</span><span class="p">.</span><span class="nx">y</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">stroke</span><span class="p">();</span>
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">closePath</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="c1">// Draw the shortest path on the canvas</span>
+<span class="c1">// This is an example of how this function would be called. ***heuristic*** refers to the new Graph created using the Graph class</span>
+<span class="nx">drawShortestPath</span><span class="p">(</span><span class="nx">heuristic</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Moving-onto-the-Game-function">
+<a class="anchor" href="#Moving-onto-the-Game-function" aria-hidden="true"><span class="octicon octicon-link"></span></a>Moving onto the Game function<a class="anchor-link" href="#Moving-onto-the-Game-function"> </a>
+</h1>
+<p>The <strong>game()</strong> function is a function that encloses all of the action that the user does. This includes multiple event handlers that are responsible for the lines dragging and dropping. It is also reponsible for drawing the graph that the user interacts with. This is essentially a separate dimension from the heuristic diagram which is not able to interact with users.</p>
+<ul>
+<li>We enclosed all of the user actions into one function in order to allow the user to first select their points and draw the graph using the user's selected points.<ul>
+<li>Without <strong>game()</strong> the user would be unable to see the points they selected on the menu selection page.</li>
+</ul>
+</li>
+</ul>
+<p><strong>For a time we will be explaining code from the game() function</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Initialization-of-Variables">
+<a class="anchor" href="#Initialization-of-Variables" aria-hidden="true"><span class="octicon octicon-link"></span></a>Initialization of Variables<a class="anchor-link" href="#Initialization-of-Variables"> </a>
+</h2>
+<p>Many variables are initialized in order to store different kinds of data for the functionality of multiple functions. The user's graph is also drawn so that the user is able to see their points on the canvas.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-javascript"><pre><span></span><span class="c1">// Initialize variables</span>
+<span class="kd">let</span> <span class="nx">selectedVertex</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">lineStartX</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">lineStartY</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">lineEndX</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">lineEndY</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">allVerticesConnected</span> <span class="o">=</span> <span class="nx">graph</span><span class="p">.</span><span class="nx">checkAllVerticesConnected</span><span class="p">();</span>
+<span class="c1">// Draw the user drawing graph</span>
+<span class="nx">drawGraph</span><span class="p">(</span><span class="nx">graph</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Defining-Adjacency-Relationships-for-the-Heuristic-Graph">
+<a class="anchor" href="#Defining-Adjacency-Relationships-for-the-Heuristic-Graph" aria-hidden="true"><span class="octicon octicon-link"></span></a>Defining Adjacency Relationships for the Heuristic Graph<a class="anchor-link" href="#Defining-Adjacency-Relationships-for-the-Heuristic-Graph"> </a>
+</h1>
+<ul>
+<li>This algorithm allows for calculation of a heuristic - It essentially finds the closest point from one starting point(vertex) to another. Then, it does the same thing again with the end point becoming the start point in the calculation.<ul>
+<li>This defining of adjacency relationships is what gives the heuristic graph its heuristic characteristics.</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-javascript"><pre><span></span><span class="c1">// Define adjacency relationships</span>
+<span class="nx">heuristic</span><span class="p">.</span><span class="nx">vertices</span><span class="p">.</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">vertex</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="kr">const</span> <span class="nx">closestPoints</span> <span class="o">=</span> <span class="nx">vertices</span>
+        <span class="p">.</span><span class="nx">filter</span><span class="p">((</span><span class="nx">p</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">p</span><span class="p">.</span><span class="nx">id</span> <span class="o">!==</span> <span class="nx">vertex</span><span class="p">.</span><span class="nx">id</span><span class="p">)</span>
+        <span class="p">.</span><span class="nx">sort</span><span class="p">((</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">heuristic</span><span class="p">.</span><span class="nx">calculateDistance</span><span class="p">(</span><span class="nx">vertex</span><span class="p">,</span> <span class="nx">a</span><span class="p">)</span> <span class="o">-</span> <span class="nx">heuristic</span><span class="p">.</span><span class="nx">calculateDistance</span><span class="p">(</span><span class="nx">vertex</span><span class="p">,</span> <span class="nx">b</span><span class="p">))</span>
+        <span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span> <span class="mf">2</span><span class="p">);</span>
+
+    <span class="nx">closestPoints</span><span class="p">.</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">point</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+        <span class="kr">const</span> <span class="nx">adjacentVertex</span> <span class="o">=</span> <span class="nx">heuristic</span><span class="p">.</span><span class="nx">map</span><span class="p">[</span><span class="nx">point</span><span class="p">.</span><span class="nx">id</span><span class="p">];</span>
+        <span class="nx">vertex</span><span class="p">.</span><span class="nx">addAdjacent</span><span class="p">(</span><span class="nx">adjacentVertex</span><span class="p">);</span>
+    <span class="p">});</span>
+    <span class="p">});</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Drawing-the-User's-Graph">
+<a class="anchor" href="#Drawing-the-User's-Graph" aria-hidden="true"><span class="octicon octicon-link"></span></a>Drawing the User's Graph<a class="anchor-link" href="#Drawing-the-User's-Graph"> </a>
+</h1>
+<ul>
+<li>function <strong>drawGraph()</strong> is very similar to function <strong>drawShortestPath()</strong> for the heuristic graph. It essentially draws out the user's interactive graph onto the canvas.<ul>
+<li>It is as convenient as drawShortestPath() and can be called multiple times to the coder's desire without problems occuring.</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-javascript"><pre><span></span><span class="c1">// Function to draw the graph on the canvas</span>
+<span class="kd">function</span> <span class="nx">drawGraph</span><span class="p">(</span><span class="nx">graph</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kr">const</span> <span class="nx">canvas</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"canvas"</span><span class="p">);</span>
+    <span class="kr">const</span> <span class="nx">ctx</span> <span class="o">=</span> <span class="nx">canvas</span><span class="p">.</span><span class="nx">getContext</span><span class="p">(</span><span class="s2">"2d"</span><span class="p">);</span>
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">clearRect</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span> <span class="mf">0</span><span class="p">,</span> <span class="nx">canvas</span><span class="p">.</span><span class="nx">width</span><span class="p">,</span> <span class="nx">canvas</span><span class="p">.</span><span class="nx">height</span><span class="p">);</span> <span class="c1">// clear the canvas</span>
+    <span class="c1">// Draw all vertices as black circles</span>
+    <span class="nx">graph</span><span class="p">.</span><span class="nx">vertices</span><span class="p">.</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">vertex</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+        <span class="nx">ctx</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span>
+        <span class="nx">ctx</span><span class="p">.</span><span class="nx">arc</span><span class="p">(</span><span class="nx">vertex</span><span class="p">.</span><span class="nx">x</span><span class="p">,</span> <span class="nx">vertex</span><span class="p">.</span><span class="nx">y</span><span class="p">,</span> <span class="mf">10</span><span class="p">,</span> <span class="mf">0</span><span class="p">,</span> <span class="mf">2</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">);</span>
+        <span class="nx">ctx</span><span class="p">.</span><span class="nx">fillStyle</span> <span class="o">=</span> <span class="nx">vertex</span><span class="p">.</span><span class="nx">connected</span> <span class="o">?</span> <span class="s2">"#00FF00"</span> <span class="o">:</span> <span class="s2">"#000000"</span><span class="p">;</span>
+        <span class="nx">ctx</span><span class="p">.</span><span class="nx">fill</span><span class="p">();</span>
+        <span class="nx">ctx</span><span class="p">.</span><span class="nx">closePath</span><span class="p">();</span>
+    <span class="p">});</span>
+    <span class="c1">// Draw the connected lines</span>
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span>
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">strokeStyle</span> <span class="o">=</span> <span class="s2">"#0000FF"</span><span class="p">;</span>
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">lineWidth</span> <span class="o">=</span> <span class="mf">3</span><span class="p">;</span>
+    <span class="nx">graph</span><span class="p">.</span><span class="nx">vertices</span><span class="p">.</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">vertex</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+        <span class="nx">vertex</span><span class="p">.</span><span class="nx">adjacent</span><span class="p">.</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">adjacentVertex</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+        <span class="nx">ctx</span><span class="p">.</span><span class="nx">moveTo</span><span class="p">(</span><span class="nx">vertex</span><span class="p">.</span><span class="nx">x</span><span class="p">,</span> <span class="nx">vertex</span><span class="p">.</span><span class="nx">y</span><span class="p">);</span>
+        <span class="nx">ctx</span><span class="p">.</span><span class="nx">lineTo</span><span class="p">(</span><span class="nx">adjacentVertex</span><span class="p">.</span><span class="nx">x</span><span class="p">,</span> <span class="nx">adjacentVertex</span><span class="p">.</span><span class="nx">y</span><span class="p">);</span>
+        <span class="p">});</span>
+    <span class="p">});</span>
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">stroke</span><span class="p">();</span>
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">closePath</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="c1">// Draw the user drawing graph</span>
+<span class="c1">// This is an example of how this function would be called. ***graph*** refers to the new Graph created using the Graph class</span>
+<span class="nx">drawGraph</span><span class="p">(</span><span class="nx">graph</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Handling-Mouse-Event-functions">
+<a class="anchor" href="#Handling-Mouse-Event-functions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Handling Mouse Event functions<a class="anchor-link" href="#Handling-Mouse-Event-functions"> </a>
+</h1>
+<p>We will next be talking about how the user is able to interact using mouse moving and clicking. We are using event handlers and event listeners to be able to track down mouse interactions.</p>
+<ul>
+<li>We will be handling the following mouse events:<ul>
+<li><strong>Mouse Down</strong></li>
+<li><strong>Mouse Move</strong></li>
+<li><strong>Mouse Up</strong></li>
+<li>What to do if reset button is clicked</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Mouse-Down">
+<a class="anchor" href="#Mouse-Down" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mouse Down<a class="anchor-link" href="#Mouse-Down"> </a>
+</h1>
+<p>Mouse Down event is handled in the <strong>handleMouseDown()</strong> function.</p>
+<ul>
+<li>The function first checks if all vertices are connected. If all vertices are connected(allVerticesConnected === true) then this function is disabled(which can prevent the user from interacting with the graph once it is completed)<ul>
+<li>This function's main functionality is to record down the coordinates of the vertex(point) in which the user clicked down on as a starting point.</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-javascript"><pre><span></span><span class="c1">// Function to handle the mouse down event</span>
+<span class="kd">function</span> <span class="nx">handleMouseDown</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">allVerticesConnected</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">return</span><span class="p">;</span> <span class="c1">// Return early if all vertices are already connected</span>
+        <span class="p">}</span>
+        <span class="kr">const</span> <span class="nx">canvas</span> <span class="o">=</span> <span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">;</span>
+        <span class="kr">const</span> <span class="nx">rect</span> <span class="o">=</span> <span class="nx">canvas</span><span class="p">.</span><span class="nx">getBoundingClientRect</span><span class="p">();</span>
+        <span class="kr">const</span> <span class="nx">mouseX</span> <span class="o">=</span> <span class="nx">e</span><span class="p">.</span><span class="nx">clientX</span> <span class="o">-</span> <span class="nx">rect</span><span class="p">.</span><span class="nx">left</span><span class="p">;</span>
+        <span class="kr">const</span> <span class="nx">mouseY</span> <span class="o">=</span> <span class="nx">e</span><span class="p">.</span><span class="nx">clientY</span> <span class="o">-</span> <span class="nx">rect</span><span class="p">.</span><span class="nx">top</span><span class="p">;</span>
+        <span class="c1">// Find the vertex that the user clicked on (if any)</span>
+        <span class="kr">const</span> <span class="nx">vertex</span> <span class="o">=</span> <span class="nx">graph</span><span class="p">.</span><span class="nx">vertices</span><span class="p">.</span><span class="nx">find</span><span class="p">((</span><span class="nx">vertex</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+            <span class="kr">const</span> <span class="nx">dx</span> <span class="o">=</span> <span class="nx">vertex</span><span class="p">.</span><span class="nx">x</span> <span class="o">-</span> <span class="nx">mouseX</span><span class="p">;</span>
+            <span class="kr">const</span> <span class="nx">dy</span> <span class="o">=</span> <span class="nx">vertex</span><span class="p">.</span><span class="nx">y</span> <span class="o">-</span> <span class="nx">mouseY</span><span class="p">;</span>
+            <span class="k">return</span> <span class="nx">dx</span> <span class="o">*</span> <span class="nx">dx</span> <span class="o">+</span> <span class="nx">dy</span> <span class="o">*</span> <span class="nx">dy</span> <span class="o">&lt;=</span> <span class="mf">100</span><span class="p">;</span> <span class="c1">// check if the click is within the vertex's radius</span>
+        <span class="p">});</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">vertex</span><span class="p">)</span> <span class="p">{</span>
+            <span class="c1">// Store the selected vertex and the starting position of the line</span>
+            <span class="nx">selectedVertex</span> <span class="o">=</span> <span class="nx">vertex</span><span class="p">;</span>
+            <span class="nx">lineStartX</span> <span class="o">=</span> <span class="nx">vertex</span><span class="p">.</span><span class="nx">x</span><span class="p">;</span>
+            <span class="nx">lineStartY</span> <span class="o">=</span> <span class="nx">vertex</span><span class="p">.</span><span class="nx">y</span><span class="p">;</span>
+            <span class="c1">// Add mouse move and mouse up event listeners</span>
+            <span class="nx">canvas</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">"mousemove"</span><span class="p">,</span> <span class="nx">handleMouseMove</span><span class="p">);</span>
+            <span class="nx">canvas</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">"mouseup"</span><span class="p">,</span> <span class="nx">handleMouseUp</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Mouse-Move">
+<a class="anchor" href="#Mouse-Move" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mouse Move<a class="anchor-link" href="#Mouse-Move"> </a>
+</h1>
+<p>Mouse Move event is handled in the <strong>handleMouseMove()</strong> function.</p>
+<ul>
+<li>The function essentially creates the line dragging effect when the user drags his mouse. The starting point is on the point the user clicked on, and the end point of the line follows the user's cursor.<ul>
+<li>This line can also be customized, such as changing its color or width.</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-javascript"><pre><span></span><span class="c1">// Function to handle the mouse move event</span>
+<span class="kd">function</span> <span class="nx">handleMouseMove</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kr">const</span> <span class="nx">canvas</span> <span class="o">=</span> <span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">;</span>
+    <span class="kr">const</span> <span class="nx">rect</span> <span class="o">=</span> <span class="nx">canvas</span><span class="p">.</span><span class="nx">getBoundingClientRect</span><span class="p">();</span>
+    <span class="kr">const</span> <span class="nx">mouseX</span> <span class="o">=</span> <span class="nx">e</span><span class="p">.</span><span class="nx">clientX</span> <span class="o">-</span> <span class="nx">rect</span><span class="p">.</span><span class="nx">left</span><span class="p">;</span>
+    <span class="kr">const</span> <span class="nx">mouseY</span> <span class="o">=</span> <span class="nx">e</span><span class="p">.</span><span class="nx">clientY</span> <span class="o">-</span> <span class="nx">rect</span><span class="p">.</span><span class="nx">top</span><span class="p">;</span>
+    <span class="c1">// Update the line end position</span>
+    <span class="nx">lineEndX</span> <span class="o">=</span> <span class="nx">mouseX</span><span class="p">;</span>
+    <span class="nx">lineEndY</span> <span class="o">=</span> <span class="nx">mouseY</span><span class="p">;</span>
+    <span class="c1">// Redraw the canvas</span>
+    <span class="nx">drawGraph</span><span class="p">(</span><span class="nx">graph</span><span class="p">);</span>
+    <span class="c1">// Draw the temporary line from the selected vertex to the mouse position</span>
+    <span class="kr">const</span> <span class="nx">ctx</span> <span class="o">=</span> <span class="nx">canvas</span><span class="p">.</span><span class="nx">getContext</span><span class="p">(</span><span class="s2">"2d"</span><span class="p">);</span>
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span>
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">strokeStyle</span> <span class="o">=</span> <span class="s2">"#FF0000"</span><span class="p">;</span>
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">lineWidth</span> <span class="o">=</span> <span class="mf">2</span><span class="p">;</span>
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">moveTo</span><span class="p">(</span><span class="nx">lineStartX</span><span class="p">,</span> <span class="nx">lineStartY</span><span class="p">);</span>
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">lineTo</span><span class="p">(</span><span class="nx">lineEndX</span><span class="p">,</span> <span class="nx">lineEndY</span><span class="p">);</span>
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">stroke</span><span class="p">();</span>
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">closePath</span><span class="p">();</span>
+    <span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Mouse-Up">
+<a class="anchor" href="#Mouse-Up" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mouse Up<a class="anchor-link" href="#Mouse-Up"> </a>
+</h1>
+<p>Mouse Up event is handled in the <strong>handleMouseUp()</strong> function.</p>
+<ul>
+<li>This function creates the "snapping effect," where the line finally connects onto another vertex(point) on the graph if the mouse is released.<ul>
+<li>It is able to do this by detecting if the line is within 20 pixels of a point once the mouse is released.<ul>
+<li>If the line is within 20 pixels of a point, the line snaps onto the corresponding point with the addAdjacent functions(addAdjacent function is found in class Vertex).</li>
+</ul>
+</li>
+<li>This function also detects to see if all points are connected.<ul>
+<li>If all points are connected, the status is updated in the console, and the user is allowed to finish the game.</li>
+<li>The total distance of all the lines formed are also calculated<ul>
+<li>The total distance is converted to miles when displaying it in HTML.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-javascript"><pre><span></span><span class="c1">// Function to handle the mouse up event</span>
+<span class="kd">function</span> <span class="nx">handleMouseUp</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kr">const</span> <span class="nx">canvas</span> <span class="o">=</span> <span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">;</span>
+    <span class="c1">// Find the vertex that the user released the mouse on (if any)</span>
+    <span class="kr">const</span> <span class="nx">vertex</span> <span class="o">=</span> <span class="nx">graph</span><span class="p">.</span><span class="nx">vertices</span><span class="p">.</span><span class="nx">find</span><span class="p">((</span><span class="nx">vertex</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+        <span class="kr">const</span> <span class="nx">dx</span> <span class="o">=</span> <span class="nx">vertex</span><span class="p">.</span><span class="nx">x</span> <span class="o">-</span> <span class="nx">lineEndX</span><span class="p">;</span>
+        <span class="kr">const</span> <span class="nx">dy</span> <span class="o">=</span> <span class="nx">vertex</span><span class="p">.</span><span class="nx">y</span> <span class="o">-</span> <span class="nx">lineEndY</span><span class="p">;</span>
+        <span class="kr">const</span> <span class="nx">distance</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">sqrt</span><span class="p">(</span><span class="nx">dx</span> <span class="o">*</span> <span class="nx">dx</span> <span class="o">+</span> <span class="nx">dy</span> <span class="o">*</span> <span class="nx">dy</span><span class="p">);</span>
+        <span class="k">return</span> <span class="nx">distance</span> <span class="o">&lt;=</span> <span class="mf">20</span><span class="p">;</span> <span class="c1">// check if the release point is within 20 pixels of the vertex</span>
+    <span class="p">});</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">vertex</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="nx">vertex</span><span class="p">.</span><span class="nx">connected</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Connect the line to the snapped vertex</span>
+        <span class="nx">selectedVertex</span><span class="p">.</span><span class="nx">addAdjacent</span><span class="p">(</span><span class="nx">vertex</span><span class="p">);</span>
+        <span class="nx">vertex</span><span class="p">.</span><span class="nx">addAdjacent</span><span class="p">(</span><span class="nx">selectedVertex</span><span class="p">);</span>
+        <span class="c1">// Set the vertices as connected</span>
+        <span class="nx">selectedVertex</span><span class="p">.</span><span class="nx">connected</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+        <span class="nx">vertex</span><span class="p">.</span><span class="nx">connected</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+        <span class="c1">// Redraw the canvas with the updated graph and line connection</span>
+        <span class="nx">drawGraph</span><span class="p">(</span><span class="nx">graph</span><span class="p">);</span>
+        <span class="c1">// Check if all vertices are connected</span>
+        <span class="nx">allVerticesConnected</span> <span class="o">=</span> <span class="nx">graph</span><span class="p">.</span><span class="nx">checkAllVerticesConnected</span><span class="p">();</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"All vertices connected:"</span><span class="p">,</span> <span class="nx">allVerticesConnected</span><span class="p">);</span>
+        <span class="c1">// allows user to finish if all points connected</span>
+        <span class="k">if</span><span class="p">(</span><span class="nx">allVerticesConnected</span> <span class="o">===</span> <span class="kc">true</span><span class="p">){</span>
+        <span class="nx">finishButton</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s2">"block"</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="c1">// Calculate and update the total distance</span>
+        <span class="kr">const</span> <span class="nx">totalDistance</span> <span class="o">=</span> <span class="nx">graph</span><span class="p">.</span><span class="nx">calculateTotalDistance</span><span class="p">();</span>
+        <span class="nx">totalDistanceDisplay</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="p">(</span><span class="nx">totalDistance</span><span class="o">/</span><span class="mf">54</span><span class="p">).</span><span class="nx">toFixed</span><span class="p">(</span><span class="mf">2</span><span class="p">);</span>
+        <span class="nx">dummyTotalD</span> <span class="o">=</span> <span class="p">(</span><span class="nx">totalDistance</span><span class="o">/</span><span class="mf">54</span><span class="p">).</span><span class="nx">toFixed</span><span class="p">(</span><span class="mf">2</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="c1">// Reset the line positions and remove the event listeners</span>
+    <span class="nx">lineStartX</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+    <span class="nx">lineStartY</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+    <span class="nx">lineEndX</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+    <span class="nx">lineEndY</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+    <span class="nx">selectedVertex</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+    <span class="nx">canvas</span><span class="p">.</span><span class="nx">removeEventListener</span><span class="p">(</span><span class="s2">"mousemove"</span><span class="p">,</span> <span class="nx">handleMouseMove</span><span class="p">);</span>
+    <span class="nx">canvas</span><span class="p">.</span><span class="nx">removeEventListener</span><span class="p">(</span><span class="s2">"mouseup"</span><span class="p">,</span> <span class="nx">handleMouseUp</span><span class="p">);</span>
+    <span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Extra-Handler:-Handling-the-Reset-Button">
+<a class="anchor" href="#Extra-Handler:-Handling-the-Reset-Button" aria-hidden="true"><span class="octicon octicon-link"></span></a>Extra Handler: Handling the Reset Button<a class="anchor-link" href="#Extra-Handler:-Handling-the-Reset-Button"> </a>
+</h1>
+<ul>
+<li>This event handler <strong>handleResetButtonClick()</strong> responds when the reset button is clicked on. When the reset button is clicked, all lines on the graph are erased and the total distance of all lines is reset to 0.<ul>
+<li>In addition, the function that checks for connection of all vertices is set to false so that the user can continue to draw lines after a reset.</li>
+<li>The finish button is also hidden to prevent the user from submitting an unfinished route.</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-javascript"><pre><span></span><span class="c1">// Function to handle the reset button click event</span>
+<span class="kd">function</span> <span class="nx">handleResetButtonClick</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// Clear the canvas</span>
+    <span class="kr">const</span> <span class="nx">canvas</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"canvas"</span><span class="p">);</span>
+    <span class="kr">const</span> <span class="nx">ctx</span> <span class="o">=</span> <span class="nx">canvas</span><span class="p">.</span><span class="nx">getContext</span><span class="p">(</span><span class="s2">"2d"</span><span class="p">);</span>
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">clearRect</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span> <span class="mf">0</span><span class="p">,</span> <span class="nx">canvas</span><span class="p">.</span><span class="nx">width</span><span class="p">,</span> <span class="nx">canvas</span><span class="p">.</span><span class="nx">height</span><span class="p">);</span>
+    <span class="c1">// Reset all vertices</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kr">const</span> <span class="nx">vertex</span> <span class="k">of</span> <span class="nx">graph</span><span class="p">.</span><span class="nx">vertices</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">vertex</span><span class="p">.</span><span class="nx">connected</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+        <span class="nx">vertex</span><span class="p">.</span><span class="nx">adjacent</span> <span class="o">=</span> <span class="p">[];</span>
+    <span class="p">}</span>
+    <span class="c1">// Reset the total distance</span>
+    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"totalDistance"</span><span class="p">).</span><span class="nx">textContent</span> <span class="o">=</span> <span class="s2">"0.00"</span><span class="p">;</span>
+    <span class="c1">// Redraw the empty canvas</span>
+    <span class="nx">drawGraph</span><span class="p">(</span><span class="nx">graph</span><span class="p">);</span>
+    <span class="c1">// Reset the allVerticesConnected flag</span>
+    <span class="nx">allVerticesConnected</span> <span class="o">=</span> <span class="nx">graph</span><span class="p">.</span><span class="nx">checkAllVerticesConnected</span><span class="p">();</span>
+    <span class="c1">// hides finish button if lines are reset</span>
+    <span class="nx">finishButton</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s2">"none"</span><span class="p">;</span>
+    <span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Utilizing-Event-Handlers">
+<a class="anchor" href="#Utilizing-Event-Handlers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Utilizing Event Handlers<a class="anchor-link" href="#Utilizing-Event-Handlers"> </a>
+</h1>
+<p>Event listeners are added in order to use these different event handlers. Multiple buttons and the canvas are assigned specific event listeners that call specific event handlers.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-javascript"><pre><span></span><span class="c1">// Add event listeners</span>
+<span class="nx">canvas</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">"mousedown"</span><span class="p">,</span> <span class="nx">handleMouseDown</span><span class="p">);</span>
+<span class="nx">resetButton</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">"click"</span><span class="p">,</span> <span class="nx">handleResetButtonClick</span><span class="p">);</span>
+<span class="nx">submitButton</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">"click"</span><span class="p">,</span> <span class="nx">handleResetButtonClick</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Page-Transitions">
+<a class="anchor" href="#Page-Transitions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Page Transitions<a class="anchor-link" href="#Page-Transitions"> </a>
+</h1>
+<ul>
+<li>We are now outside of function game() and will now explore the code for page transitions.<ul>
+<li>function <strong>gameScreen()</strong> has a parameter which can help indicate the status of the page(whether the user is playing, on the start screen, or on the end screen, etc.)</li>
+<li>Different pages will appear and disappear corresponding to which button the user presses on.<ul>
+<li>If the Finish Game button is pressed, the heuristic graph is drawn onto the canvas.</li>
+<li>In this place we added our scoring algorithm to be able to display the score of the user.<ul>
+<li>The scoring is in accordance to how far away the user is from the shortest distance possible. The closer the route is to the shortest route, the higher the score.</li>
+<li>The list of locations are also displayed using a for loop, and are shown on the form.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-javascript"><pre><span></span><span class="c1">// Initially hides end page and game page and finish button</span>
+<span class="nx">endPage</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s2">"none"</span><span class="p">;</span>
+<span class="nx">gamePage</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s2">"none"</span><span class="p">;</span>
+<span class="nx">finishButton</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s2">"none"</span><span class="p">;</span>
+<span class="nx">finishForm</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s2">"none"</span><span class="p">;</span>
+<span class="nx">menuPage</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s2">"none"</span><span class="p">;</span>
+<span class="c1">// Function switches screen based on status parameter</span>
+<span class="kd">function</span> <span class="nx">gameScreen</span><span class="p">(</span><span class="nx">status</span><span class="p">){</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">status</span> <span class="o">===</span> <span class="mf">1</span><span class="p">){</span>
+    <span class="nx">startPage</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s2">"none"</span><span class="p">;</span>
+    <span class="nx">menuPage</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s2">"block"</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">status</span> <span class="o">===</span> <span class="mf">2</span><span class="p">){</span>
+    <span class="nx">finishForm</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s2">"block"</span><span class="p">;</span>
+    <span class="nx">resetButton</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s2">"none"</span><span class="p">;</span>
+    <span class="nx">finishButton</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s2">"none"</span><span class="p">;</span>
+    <span class="c1">// Draw the shortest path on the canvas</span>
+    <span class="nx">drawShortestPath</span><span class="p">(</span><span class="nx">heuristic</span><span class="p">);</span>
+    <span class="c1">// Calculates the score</span>
+    <span class="kd">let</span> <span class="nx">intShortestDistance</span><span class="o">=</span><span class="nb">parseInt</span><span class="p">(</span><span class="nx">shortestDistanceResult</span><span class="p">.</span><span class="nx">innerHTML</span><span class="p">);</span>
+    <span class="kd">let</span> <span class="nx">intUserDistance</span><span class="o">=</span><span class="nb">parseInt</span><span class="p">(</span><span class="nx">totalDistanceDisplay</span><span class="p">.</span><span class="nx">innerHTML</span><span class="p">);</span>
+    <span class="kd">let</span> <span class="nx">score</span> <span class="o">=</span> <span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">pow</span><span class="p">(</span><span class="mf">2</span><span class="p">,</span><span class="nx">vertices</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span><span class="o">*</span><span class="mf">1000</span><span class="o">*</span><span class="nb">Math</span><span class="p">.</span><span class="nx">pow</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">E</span><span class="p">,(</span><span class="mf">2</span><span class="o">*</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">intUserDistance</span><span class="o">/</span><span class="nx">intShortestDistance</span><span class="p">))))).</span><span class="nx">toFixed</span><span class="p">(</span><span class="mf">2</span><span class="p">);</span>
+    <span class="c1">// Invalidates score in case distance is less than shortest distance. Displays score if otherwise</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">intShortestDistance</span><span class="o">&gt;</span><span class="nx">intUserDistance</span><span class="p">){</span>
+        <span class="nx">totalDistanceDisplay</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="s2">"**error**"</span><span class="p">;</span>
+        <span class="nx">scoreDisplay</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="s2">"NA"</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span><span class="p">{</span>
+        <span class="c1">// Adds bonus score if user chooses more points(since more points means higher difficulty)</span>
+        <span class="k">if</span><span class="p">(</span><span class="nx">vertices</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mf">5</span><span class="p">){</span>
+            <span class="nx">score</span> <span class="o">=</span> <span class="p">(</span><span class="nx">score</span><span class="o">*</span><span class="p">(</span><span class="mf">1</span><span class="o">+</span><span class="mf">0.12</span><span class="o">*</span><span class="p">(</span><span class="nx">vertices</span><span class="p">.</span><span class="nx">length</span><span class="o">-</span><span class="mf">5</span><span class="p">))).</span><span class="nx">toFixed</span><span class="p">(</span><span class="mf">2</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="nx">scoreDisplay</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="nx">score</span><span class="p">.</span><span class="nx">toString</span><span class="p">();</span>
+        <span class="nx">dummyScore</span> <span class="o">=</span> <span class="nx">score</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="c1">// for loop to display locations on the form</span>
+    <span class="nx">locationDisplay</span> <span class="o">=</span> <span class="s2">""</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span><span class="o">=</span><span class="mf">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span><span class="p">(</span><span class="nx">locationNames</span><span class="p">.</span><span class="nx">length</span><span class="o">-</span><span class="mf">1</span><span class="p">);</span> <span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+        <span class="nx">locationDisplay</span> <span class="o">+=</span> <span class="nx">locationNames</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">+</span> <span class="s2">", "</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nx">locationDisplay</span> <span class="o">+=</span> <span class="nx">locationNames</span><span class="p">[</span><span class="nx">locationNames</span><span class="p">.</span><span class="nx">length</span><span class="o">-</span><span class="mf">1</span><span class="p">];</span>
+    <span class="nx">locationList</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="nx">locationDisplay</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">status</span> <span class="o">===</span> <span class="mf">3</span><span class="p">){</span>
+    <span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">reload</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Page-Transitions-in-HTML">
+<a class="anchor" href="#Page-Transitions-in-HTML" aria-hidden="true"><span class="octicon octicon-link"></span></a>Page Transitions in HTML<a class="anchor-link" href="#Page-Transitions-in-HTML"> </a>
+</h1>
+<ul>
+<li>We will now show how page transitions are created to ensure a smooth user experience.<ul>
+<li>Multiple divs are used to separate the start, playing, menu, and end screens.</li>
+<li>Liquid is used to utilize the menu selection page and functionality(which is in a separate file). Liquid makes the code more clear with less clutter. It also reduces the hassle of copying and pasting and having to reformat the code.</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"start-page"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"button-container"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"gen-button"</span> <span class="na">onclick</span><span class="o">=</span><span class="s">"gameScreen(1)"</span> <span class="na">id</span><span class="o">=</span><span class="s">"start-button"</span><span class="p">&gt;</span>Start Game<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"menu-selection-page"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">style</span><span class="o">=</span><span class="s">"color:white; text-align: center;"</span><span class="p">&gt;</span>Please select 2-10 locations you would like to visit.<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">style</span><span class="o">=</span><span class="s">"color:white; text-align: center;"</span><span class="p">&gt;</span>Selection of locations is limited to 10 locations.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="c">&lt;!-- Use liquid to incorporate menu code for easier access, removed so that fastpages will not have an error --&gt;</span>
+    <span class="c">&lt;!-- ***liquid goes here*** --&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"end-page"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Thank you for playing!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>If you would like to play another round, please click the button below.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"button-container"</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"gen-button"</span> <span class="na">onclick</span><span class="o">=</span><span class="s">"gameScreen(3)"</span><span class="p">&gt;</span>Return to Game Page<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>If you would like to return to the home page, please click <span class="p">&lt;</span><span class="nt">span</span> <span class="na">id</span><span class="o">=</span><span class="s">"linked-gametohome"</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"/VSCode-Fastpages/index"</span><span class="p">&gt;</span>here<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>.<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"finish-form"</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">h3</span> <span class="na">style</span><span class="o">=</span><span class="s">"color:white;"</span><span class="p">&gt;</span>Game over, please record your score!<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">p</span> <span class="na">style</span><span class="o">=</span><span class="s">"color:white;"</span><span class="p">&gt;</span>The shortest route is shown on the map with the red lines<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">"javascript:userCreate()"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">label</span><span class="p">&gt;</span>
+            Username:
+            <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"text"</span> <span class="na">name</span><span class="o">=</span><span class="s">"username"</span> <span class="na">id</span><span class="o">=</span><span class="s">"username"</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">"Enter username here"</span> <span class="na">required</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">label</span><span class="p">&gt;</span>
+            Total Distance of your route: <span class="p">&lt;</span><span class="nt">span</span> <span class="na">id</span><span class="o">=</span><span class="s">"totalDistance"</span><span class="p">&gt;</span>0.00<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span> miles
+        <span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">label</span><span class="p">&gt;</span>
+            Total Distance of shortest route: <span class="p">&lt;</span><span class="nt">span</span> <span class="na">id</span><span class="o">=</span><span class="s">"totalDistanceClosest"</span><span class="p">&gt;</span>0.00<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span> miles
+        <span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">label</span><span class="p">&gt;</span>
+            Calculated score: <span class="p">&lt;</span><span class="nt">span</span> <span class="na">id</span><span class="o">=</span><span class="s">"scoring"</span><span class="p">&gt;</span>0<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">label</span><span class="p">&gt;</span>
+            Locations visited: <span class="p">&lt;</span><span class="nt">span</span> <span class="na">id</span><span class="o">=</span><span class="s">"locationList"</span><span class="p">&gt;</span>NA<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+        <span class="c">&lt;!-- Popup message on button click --&gt;</span>
+            <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">"alert('Your score has been posted!')"</span> <span class="na">id</span><span class="o">=</span><span class="s">"form-submit-button"</span><span class="p">&gt;</span>Submit<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"game-page"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"button-container"</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">"game-finish-button"</span> <span class="na">class</span><span class="o">=</span><span class="s">"gen-button"</span> <span class="na">onclick</span><span class="o">=</span><span class="s">"gameScreen(2)"</span><span class="p">&gt;</span>Finish Game<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">"resetButton"</span> <span class="na">class</span><span class="o">=</span><span class="s">"gen-button"</span><span class="p">&gt;</span>Reset<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">canvas</span> <span class="na">id</span><span class="o">=</span><span class="s">"canvas"</span> <span class="na">width</span><span class="o">=</span><span class="s">"1072"</span> <span class="na">height</span><span class="o">=</span><span class="s">"829"</span><span class="p">&gt;&lt;/</span><span class="nt">canvas</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="POST-Request">
+<a class="anchor" href="#POST-Request" aria-hidden="true"><span class="octicon octicon-link"></span></a>POST Request<a class="anchor-link" href="#POST-Request"> </a>
+</h1>
+<ul>
+<li>At the end of a game, the user is prompted to submit their data to a database. This is done through the POST request code.<ul>
+<li>Dummy variables for score, total distance, and calculated distance are created in order to prevent conflicts with the HTML strings from each element with the corresponding id.<ul>
+<li>These are automatic inputs, and the user does not need to input anything for these categories.</li>
+</ul>
+</li>
+<li>The list locationNames is added into <strong>body</strong> as it is without the need for input from the user.</li>
+<li>Only the username requires input from the user in the form.</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-javascript"><pre><span></span><span class="c1">// prepare URL's to allow easy switch from deployment and localhost</span>
+<span class="c1">// const url = "http://localhost:8086/api/leaderboardUser";</span>
+<span class="kr">const</span> <span class="nx">url</span> <span class="o">=</span> <span class="s2">"https://school.aipad-techs.com/api/leaderboardUser/api/leaderboardUser"</span><span class="p">;</span>
+<span class="kr">const</span> <span class="nx">createGame</span> <span class="o">=</span> <span class="nx">url</span> <span class="o">+</span> <span class="s1">'/addscore'</span><span class="p">;</span>
+
+<span class="c1">// Function creates POST request</span>
+<span class="kd">function</span> <span class="nx">userCreate</span><span class="p">(){</span>
+        <span class="c1">// Get the data</span>
+<span class="kr">const</span> <span class="nx">body</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">name</span><span class="o">:</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"username"</span><span class="p">).</span><span class="nx">value</span><span class="p">,</span>
+    <span class="nx">score</span><span class="o">:</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">round</span><span class="p">(</span><span class="nx">dummyScore</span><span class="p">),</span>
+    <span class="nx">locations</span><span class="o">:</span> <span class="nx">locationNames</span><span class="p">,</span>
+    <span class="nx">tot_distance</span><span class="o">:</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">round</span><span class="p">(</span><span class="nx">dummyTotalD</span><span class="p">),</span>
+    <span class="nx">calc_distance</span><span class="o">:</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">round</span><span class="p">(</span><span class="nx">dummyCalcD</span><span class="p">)</span>
+<span class="p">};</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">body</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">requestOptions</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">method</span><span class="o">:</span> <span class="s1">'POST'</span><span class="p">,</span>
+    <span class="nx">body</span><span class="o">:</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">body</span><span class="p">),</span>
+    <span class="nx">mode</span><span class="o">:</span> <span class="s1">'cors'</span><span class="p">,</span>
+    <span class="nx">cache</span><span class="o">:</span> <span class="s1">'default'</span><span class="p">,</span>
+    <span class="c1">//credentials: 'include',</span>
+    <span class="nx">headers</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">"content-type"</span><span class="o">:</span> <span class="s2">"application/json"</span><span class="p">,</span>
+        <span class="s1">'Authorization'</span><span class="o">:</span> <span class="s1">'Bearer my-token'</span><span class="p">,</span>
+    <span class="p">},</span>
+<span class="p">};</span>
+<span class="c1">// URL for Create API</span>
+<span class="c1">// Fetch API call to the database to create a new user</span>
+<span class="nx">fetch</span><span class="p">(</span><span class="nx">createGame</span><span class="p">,</span> <span class="nx">requestOptions</span><span class="p">)</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// trap error response from Web API</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">status</span> <span class="o">!==</span> <span class="mf">200</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kr">const</span> <span class="nx">errorMsg</span> <span class="o">=</span> <span class="s1">'Database create error: '</span> <span class="o">+</span> <span class="nx">response</span><span class="p">.</span><span class="nx">status</span><span class="p">;</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">errorMsg</span><span class="p">);</span>
+        <span class="k">return</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="c1">// response contains valid result</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">().</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="p">=&gt;</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+    <span class="p">})</span>
+<span class="p">})</span>
+    <span class="nx">finishForm</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s2">"none"</span><span class="p">;</span>
+    <span class="nx">gamePage</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s2">"none"</span><span class="p">;</span>
+    <span class="nx">endPage</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s2">"block"</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Styling">
+<a class="anchor" href="#Styling" aria-hidden="true"><span class="octicon octicon-link"></span></a>Styling<a class="anchor-link" href="#Styling"> </a>
+</h1>
+<p>Additional styling is used to make the website look better, as well as adding the map picture onto the canvas.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="p">#</span><span class="nn">title-thing</span><span class="p">{</span>
+      <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+      <span class="k">color</span><span class="p">:</span> <span class="kc">white</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="p">.</span><span class="nc">button-container</span><span class="p">{</span>
+      <span class="k">width</span><span class="p">:</span> <span class="n">fit-content</span><span class="p">;</span>
+      <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span> <span class="kc">auto</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="p">.</span><span class="nc">gen-button</span><span class="p">{</span>
+      <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
+      <span class="k">width</span><span class="p">:</span> <span class="mi">200</span><span class="kt">px</span><span class="p">;</span>
+      <span class="k">padding</span><span class="p">:</span> <span class="mi">15</span><span class="kt">px</span> <span class="mi">0</span><span class="p">;</span>
+      <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+      <span class="k">margin</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+      <span class="k">background</span><span class="p">:</span> <span class="kc">transparent</span><span class="p">;</span>
+      <span class="k">border-radius</span><span class="p">:</span> <span class="mi">25</span><span class="kt">px</span><span class="p">;</span>
+      <span class="k">border</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#009614</span><span class="p">;</span>
+      <span class="k">color</span><span class="p">:</span> <span class="mh">#fff</span><span class="p">;</span>
+      <span class="k">font-weight</span><span class="p">:</span> <span class="kc">bold</span><span class="p">;</span>
+      <span class="k">cursor</span><span class="p">:</span> <span class="kc">pointer</span><span class="p">;</span>
+      <span class="k">position</span><span class="p">:</span> <span class="kc">relative</span><span class="p">;</span>
+      <span class="k">overflow</span><span class="p">:</span> <span class="kc">hidden</span><span class="p">;</span>
+      <span class="k">transition</span><span class="p">:</span> <span class="kc">all</span> <span class="mf">0.6</span><span class="kt">s</span><span class="p">;</span>
+      <span class="k">color</span><span class="p">:</span> <span class="kc">white</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="p">.</span><span class="nc">gen-button</span><span class="p">:</span><span class="nd">hover</span><span class="p">{</span>
+      <span class="k">background-color</span><span class="p">:</span> <span class="mh">#009614</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="p">#</span><span class="nn">canvas</span><span class="p">{</span>
+      <span class="k">border</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#000000</span><span class="p">;</span>
+      <span class="k">background-image</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="s1">'SDmap.png'</span><span class="p">);</span>
+      <span class="k">background-position</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="p">#</span><span class="nn">linked-gametohome</span><span class="p">{</span>
+      <span class="k">background-color</span><span class="p">:</span> <span class="kc">yellow</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="p">#</span><span class="nn">end-page</span><span class="p">{</span>
+      <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+      <span class="k">color</span><span class="p">:</span> <span class="kc">white</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="p">#</span><span class="nn">game-page</span><span class="p">{</span>
+      <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+      <span class="k">color</span><span class="p">:</span> <span class="kc">white</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="p">#</span><span class="nn">finish-form</span><span class="p">{</span>
+      <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+      <span class="k">background-color</span><span class="p">:</span> <span class="kc">transparent</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nt">form</span> <span class="p">{</span>
+      <span class="k">background</span><span class="p">:</span> <span class="kc">transparent</span><span class="p">;</span> <span class="c">/* Adjust the alpha value (0.5) to control the transparency */</span>
+    <span class="p">}</span>
+
+    <span class="nt">label</span> <span class="p">{</span>
+      <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
+      <span class="k">color</span><span class="p">:</span> <span class="kc">white</span><span class="p">;</span>
+      <span class="k">font-family</span><span class="p">:</span> <span class="n">Helvetica</span><span class="p">,</span> <span class="n">arial</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nt">p</span><span class="p">{</span>
+      <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="p">#</span><span class="nn">username</span><span class="p">{</span>
+      <span class="k">background</span><span class="p">:</span> <span class="kc">transparent</span><span class="p">;</span>
+      <span class="k">border</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+      <span class="k">outline</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
+      <span class="k">font-size</span><span class="p">:</span> <span class="mi">1</span><span class="kt">em</span><span class="p">;</span>
+      <span class="k">padding</span><span class="p">:</span><span class="mi">0</span> <span class="mi">35</span><span class="kt">px</span> <span class="mi">0</span> <span class="mi">5</span><span class="kt">px</span><span class="p">;</span>
+      <span class="k">color</span><span class="p">:</span> <span class="kc">white</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="p">#</span><span class="nn">form-submit-button</span><span class="p">{</span>
+      <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
+      <span class="k">width</span><span class="p">:</span> <span class="mi">200</span><span class="kt">px</span><span class="p">;</span>
+      <span class="k">padding</span><span class="p">:</span> <span class="mi">15</span><span class="kt">px</span> <span class="mi">0</span><span class="p">;</span>
+      <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+      <span class="k">margin</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span> <span class="kc">auto</span><span class="p">;</span>
+      <span class="k">background</span><span class="p">:</span> <span class="kc">transparent</span><span class="p">;</span>
+      <span class="k">border-radius</span><span class="p">:</span> <span class="mi">25</span><span class="kt">px</span><span class="p">;</span>
+      <span class="k">border</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#009614</span><span class="p">;</span>
+      <span class="k">color</span><span class="p">:</span> <span class="mh">#fff</span><span class="p">;</span>
+      <span class="k">font-weight</span><span class="p">:</span> <span class="kc">bold</span><span class="p">;</span>
+      <span class="k">cursor</span><span class="p">:</span> <span class="kc">pointer</span><span class="p">;</span>
+      <span class="k">overflow</span><span class="p">:</span> <span class="kc">hidden</span><span class="p">;</span>
+      <span class="k">transition</span><span class="p">:</span> <span class="kc">all</span> <span class="mf">0.6</span><span class="kt">s</span><span class="p">;</span>
+      <span class="k">color</span><span class="p">:</span> <span class="kc">white</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="p">#</span><span class="nn">form-submit-button</span><span class="p">:</span><span class="nd">hover</span><span class="p">{</span>
+      <span class="k">background-color</span><span class="p">:</span> <span class="mh">#009614</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="p">.</span><span class="nc">banner</span><span class="p">{</span>
+    <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+    <span class="k">height</span><span class="p">:</span> <span class="mi">200</span><span class="kt">%</span> <span class="cp">!important</span><span class="p">;</span>
+    <span class="k">background-image</span><span class="p">:</span> <span class="nb">linear-gradient</span><span class="p">(</span><span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.75</span><span class="p">),</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.75</span><span class="p">)),</span><span class="nb">url</span><span class="p">(</span><span class="sx">homepg.jpg</span><span class="p">);</span>
+    <span class="k">background-size</span><span class="p">:</span> <span class="kc">cover</span><span class="p">;</span>
+    <span class="k">background-position</span><span class="p">:</span> <span class="kc">center</span> <span class="cp">!important</span> <span class="p">;</span>
+    <span class="p">}</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><a class="u-url" href="/VSCode-Fastpages/jupyter/week%2036/2023/06/04/FrontendFinal.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/VSCode-Fastpages/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="https://a1234l.github.io/VSCode-Fastpages/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/VSCode-Fastpages/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>This is my blogging platform for my Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li>
+  <a rel="me" href=" https://github.com/A1234l " target="_blank" title="github">
+    <svg class="svg-icon grey">
+      <use xlink:href="/VSCode-Fastpages/assets/minima-social-icons.svg#github"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href=" https://twitter.com/NighthawkCodin " target="_blank" title="twitter">
+    <svg class="svg-icon grey">
+      <use xlink:href="/VSCode-Fastpages/assets/minima-social-icons.svg#twitter"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href=" https://www.youtube.com/channel/UC1akV2IlxiXWLUxzQX0slmw/featured " target="_blank" title="youtube">
+    <svg class="svg-icon grey">
+      <use xlink:href="/VSCode-Fastpages/assets/minima-social-icons.svg#youtube"></use>
+    </svg>
+  </a>
+</li>
+</ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
